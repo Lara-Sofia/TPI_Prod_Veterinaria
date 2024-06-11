@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\TPI_Prod_Veterinaria.props" />
+</Project>
