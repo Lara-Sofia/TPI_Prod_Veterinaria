@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Application",
+    "\\Application\\Services",
+    "\\Domain",
+    "\\Domain\\Entities",
+    "\\Infra",
+    "\\TPI_Prod_Veterinaria"
+  ],
+  "SelectedNode": "\\Application\\bin",
+  "PreviewInSolutionExplorer": false
+}
