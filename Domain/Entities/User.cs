@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Domain.Entities
 {
-    public class User
+    public abstract class User 
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

@@ -20,6 +20,8 @@ namespace Domain.Entities
 
         [Column(TypeName = "datetime")]
         public DateTime CreationDate { get; private set; } = DateTime.Now;
-        //fehca de modificación??
+
+        public Mascota Mascota { get; set; }
+        
     }
 }

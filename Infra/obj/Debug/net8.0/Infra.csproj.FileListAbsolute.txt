@@ -17,3 +17,4 @@ C:\Users\Larata\Desktop\TPI\Infra\obj\Debug\net8.0\refint\Infra.dll
 C:\Users\Larata\Desktop\TPI\Infra\obj\Debug\net8.0\Infra.pdb
 C:\Users\Larata\Desktop\TPI\Infra\obj\Debug\net8.0\Infra.genruntimeconfig.cache
 C:\Users\Larata\Desktop\TPI\Infra\obj\Debug\net8.0\ref\Infra.dll
+C:\Users\Larata\Desktop\TPI\Infra\obj\Debug\net8.0\Infra.sourcelink.json

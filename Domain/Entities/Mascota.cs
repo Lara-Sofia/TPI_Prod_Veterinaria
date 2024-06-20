@@ -13,12 +13,12 @@ namespace Domain.Entities
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+
         [Required]
         public string Name { get; set; }
 
-        [ForeignKey("DiagnosticoId")]
-        public Diagnostico diagnosticoSegunMasc { get; set; }
+        public bool Estado { get; set; } 
 
-        public bool Estado { get; set; } //si lo retiró o no
+        public ICollection<Diagnostico> Diagnosticos { get; set; }
     }
 }
