@@ -18,3 +18,23 @@ C:\Users\Larata\Desktop\TPI\Infra\obj\Debug\net8.0\Infra.pdb
 C:\Users\Larata\Desktop\TPI\Infra\obj\Debug\net8.0\Infra.genruntimeconfig.cache
 C:\Users\Larata\Desktop\TPI\Infra\obj\Debug\net8.0\ref\Infra.dll
 C:\Users\Larata\Desktop\TPI\Infra\obj\Debug\net8.0\Infra.sourcelink.json
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\bin\Debug\net8.0\Infra.deps.json
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\bin\Debug\net8.0\Infra.runtimeconfig.json
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\bin\Debug\net8.0\Infra.dll
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\bin\Debug\net8.0\Infra.pdb
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\bin\Debug\net8.0\Application.dll
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\bin\Debug\net8.0\Domain.dll
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\bin\Debug\net8.0\Application.pdb
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\bin\Debug\net8.0\Domain.pdb
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\obj\Debug\net8.0\Infra.csproj.AssemblyReference.cache
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\obj\Debug\net8.0\Infra.GeneratedMSBuildEditorConfig.editorconfig
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\obj\Debug\net8.0\Infra.AssemblyInfoInputs.cache
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\obj\Debug\net8.0\Infra.AssemblyInfo.cs
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\obj\Debug\net8.0\Infra.csproj.CoreCompileInputs.cache
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\obj\Debug\net8.0\Infra.sourcelink.json
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\obj\Debug\net8.0\Infra.csproj.Up2Date
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\obj\Debug\net8.0\Infra.dll
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\obj\Debug\net8.0\refint\Infra.dll
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\obj\Debug\net8.0\Infra.pdb
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\obj\Debug\net8.0\Infra.genruntimeconfig.cache
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Infra\obj\Debug\net8.0\ref\Infra.dll

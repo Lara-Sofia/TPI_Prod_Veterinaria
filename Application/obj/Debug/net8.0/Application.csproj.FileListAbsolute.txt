@@ -14,3 +14,19 @@ C:\Users\Larata\Desktop\TPI\Application\obj\Debug\net8.0\refint\Application.dll
 C:\Users\Larata\Desktop\TPI\Application\obj\Debug\net8.0\Application.pdb
 C:\Users\Larata\Desktop\TPI\Application\obj\Debug\net8.0\ref\Application.dll
 C:\Users\Larata\Desktop\TPI\Application\obj\Debug\net8.0\Application.sourcelink.json
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Application\bin\Debug\net8.0\Application.deps.json
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Application\bin\Debug\net8.0\Application.dll
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Application\bin\Debug\net8.0\Application.pdb
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Application\bin\Debug\net8.0\Domain.dll
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Application\bin\Debug\net8.0\Domain.pdb
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Application\obj\Debug\net8.0\Application.sourcelink.json
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Application\obj\Debug\net8.0\Application.dll
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Application\obj\Debug\net8.0\refint\Application.dll
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Application\obj\Debug\net8.0\Application.pdb
+E:\Cosas de Sofi\Prog3 2024\TPI_Prod_Veterinaria\Application\obj\Debug\net8.0\ref\Application.dll

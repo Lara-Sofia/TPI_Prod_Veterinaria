@@ -52,7 +52,7 @@ namespace Infra.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("ClienteId")
+                    b.Property<int>("ClienteId")
                         .HasColumnType("INTEGER");
 
                     b.Property<bool>("Estado")
@@ -135,9 +135,13 @@ namespace Infra.Migrations
 
             modelBuilder.Entity("Domain.Entities.Mascota", b =>
                 {
-                    b.HasOne("Domain.Entities.Cliente", null)
+                    b.HasOne("Domain.Entities.Cliente", "Cliente")
                         .WithMany("Mascotas")
-                        .HasForeignKey("ClienteId");
+                        .HasForeignKey("ClienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cliente");
                 });
 
             modelBuilder.Entity("Domain.Entities.Mascota", b =>

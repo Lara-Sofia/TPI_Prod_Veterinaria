@@ -20,5 +20,9 @@ namespace Domain.Entities
         public bool Estado { get; set; } 
 
         public ICollection<Diagnostico> Diagnosticos { get; set; }
+
+        [ForeignKey("ClienteId")]
+        public int ClienteId { get; set; }
+        public Cliente Cliente { get; set; }
     }
 }

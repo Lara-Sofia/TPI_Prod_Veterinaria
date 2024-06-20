@@ -8,9 +8,9 @@ namespace TPI_Prod_Veterinaria.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly UserServices _userServices;
+        private readonly VeteServices _userServices;
 
-        public UserController(UserServices userServices)
+        public UserController(VeteServices userServices)
         {
             _userServices = userServices;
         }
