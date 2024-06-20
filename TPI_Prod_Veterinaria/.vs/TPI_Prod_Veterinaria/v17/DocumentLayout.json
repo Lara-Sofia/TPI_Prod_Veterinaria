@@ -3,25 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Larata\\Desktop\\TPI\\TPI_Prod_Veterinaria\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{94E1D897-7FE8-4F7F-AFBA-FA32BFE1015D}|..\\Application\\Application.csproj|c:\\users\\larata\\desktop\\tpi\\application\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94E1D897-7FE8-4F7F-AFBA-FA32BFE1015D}|..\\Application\\Application.csproj|c:\\users\\larata\\desktop\\tpi\\application\\interfaces\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94E1D897-7FE8-4F7F-AFBA-FA32BFE1015D}|..\\Application\\Application.csproj|c:\\users\\larata\\desktop\\tpi\\application\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AB341037-8CA8-4A1F-AB53-34B0E7C68895}|..\\Infra\\Infra.csproj|c:\\users\\larata\\desktop\\tpi\\infra\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|c:\\users\\larata\\desktop\\tpi\\domain\\viewmodels\\createmascotaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|c:\\users\\larata\\desktop\\tpi\\domain\\entities\\mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|c:\\users\\larata\\desktop\\tpi\\domain\\dto\\mascotacondiagnosticodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|c:\\users\\larata\\desktop\\tpi\\domain\\dto\\mascotadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|c:\\users\\larata\\desktop\\tpi\\domain\\dto\\diagnosticodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|c:\\users\\larata\\desktop\\tpi\\domain\\entities\\diagnostico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|c:\\users\\larata\\desktop\\tpi\\domain\\irepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|c:\\users\\larata\\desktop\\tpi\\domain\\irepository\\iclienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -33,26 +27,11 @@
       "AbsoluteMoniker": "D:0:0:{AB341037-8CA8-4A1F-AB53-34B0E7C68895}|..\\Infra\\Infra.csproj|c:\\users\\larata\\desktop\\tpi\\infra\\data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|c:\\users\\larata\\desktop\\tpi\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|c:\\users\\larata\\desktop\\tpi\\domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|c:\\users\\larata\\desktop\\tpi\\domain\\irepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|c:\\users\\larata\\desktop\\tpi\\domain\\enum\\statusmascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|c:\\users\\larata\\desktop\\tpi\\domain\\entities\\veterinario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|c:\\users\\larata\\desktop\\tpi\\tpi_prod_veterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94E1D897-7FE8-4F7F-AFBA-FA32BFE1015D}|..\\Application\\Application.csproj|c:\\users\\larata\\desktop\\tpi\\application\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|c:\\users\\larata\\desktop\\tpi\\tpi_prod_veterinaria\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -106,141 +85,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateMascotaViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\ViewModels\\CreateMascotaViewModel.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\ViewModels\\CreateMascotaViewModel.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\ViewModels\\CreateMascotaViewModel.cs",
-              "RelativeToolTip": "..\\Domain\\ViewModels\\CreateMascotaViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Application\\Models\\UserDto.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Models\\UserDto.cs",
+              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI\\Application\\Models\\UserDto.cs",
+              "RelativeToolTip": "..\\Application\\Models\\UserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T02:12:26.489Z",
+              "WhenOpened": "2024-06-20T18:46:20.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUserServices.cs",
+              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Application\\Interfaces\\IUserServices.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\IUserServices.cs",
+              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI\\Application\\Interfaces\\IUserServices.cs",
+              "RelativeToolTip": "..\\Application\\Interfaces\\IUserServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T18:45:42.551Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MascotaConDiagnosticoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Dto\\MascotaConDiagnosticoDTO.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Dto\\MascotaConDiagnosticoDTO.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Dto\\MascotaConDiagnosticoDTO.cs",
-              "RelativeToolTip": "..\\Domain\\Dto\\MascotaConDiagnosticoDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T02:06:24.267Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Mascota.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Entities\\Mascota.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Mascota.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Entities\\Mascota.cs",
-              "RelativeToolTip": "..\\Domain\\Entities\\Mascota.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAuwBEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T00:01:44.891Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MascotaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Dto\\MascotaDTO.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Dto\\MascotaDTO.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Dto\\MascotaDTO.cs",
-              "RelativeToolTip": "..\\Domain\\Dto\\MascotaDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T02:10:21.781Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DiagnosticoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Dto\\DiagnosticoDTO.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Dto\\DiagnosticoDTO.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Dto\\DiagnosticoDTO.cs",
-              "RelativeToolTip": "..\\Domain\\Dto\\DiagnosticoDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T02:04:07.403Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Diagnostico.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Entities\\Diagnostico.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Diagnostico.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Entities\\Diagnostico.cs",
-              "RelativeToolTip": "..\\Domain\\Entities\\Diagnostico.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T00:01:29.306Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Entities\\Cliente.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Cliente.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Entities\\Cliente.cs",
-              "RelativeToolTip": "..\\Domain\\Entities\\Cliente.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T00:01:16.892Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Veterinario.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Entities\\Veterinario.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Veterinario.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Entities\\Veterinario.cs",
-              "RelativeToolTip": "..\\Domain\\Entities\\Veterinario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T00:00:49.355Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Entities\\User.cs",
-              "RelativeToolTip": "..\\Domain\\Entities\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T21:55:25.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Infra\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "..\\Infra\\Repository\\UserRepository.cs",
               "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI\\Infra\\Repository\\UserRepository.cs",
               "RelativeToolTip": "..\\Infra\\Repository\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T22:34:08.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ApplicationContext.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Infra\\Data\\ApplicationContext.cs",
-              "RelativeDocumentMoniker": "..\\Infra\\Data\\ApplicationContext.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI\\Infra\\Data\\ApplicationContext.cs",
-              "RelativeToolTip": "..\\Infra\\Data\\ApplicationContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T22:18:11.699Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "ClienteRepository.cs",
               "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Infra\\Repository\\ClienteRepository.cs",
               "RelativeDocumentMoniker": "..\\Infra\\Repository\\ClienteRepository.cs",
@@ -248,11 +132,12 @@
               "RelativeToolTip": "..\\Infra\\Repository\\ClienteRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T22:53:44.948Z"
+              "WhenOpened": "2024-06-13T22:53:44.948Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "IClienteRepository.cs",
               "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\IRepository\\IClienteRepository.cs",
               "RelativeDocumentMoniker": "..\\Domain\\IRepository\\IClienteRepository.cs",
@@ -264,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
               "Title": "StatusMascota.cs",
               "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\Enum\\StatusMascota.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Enum\\StatusMascota.cs",
@@ -276,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\TPI_Prod_Veterinaria\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -288,19 +173,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\IRepository\\IUserRepository.cs",
               "RelativeDocumentMoniker": "..\\Domain\\IRepository\\IUserRepository.cs",
               "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI\\Domain\\IRepository\\IUserRepository.cs",
               "RelativeToolTip": "..\\Domain\\IRepository\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T22:58:21.802Z"
+              "WhenOpened": "2024-06-10T22:58:21.802Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 10,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\TPI_Prod_Veterinaria\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
@@ -312,15 +198,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 0,
               "Title": "UserServices.cs",
               "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Application\\Services\\UserServices.cs",
               "RelativeDocumentMoniker": "..\\Application\\Services\\UserServices.cs",
               "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI\\Application\\Services\\UserServices.cs",
               "RelativeToolTip": "..\\Application\\Services\\UserServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T22:03:47.925Z"
+              "WhenOpened": "2024-06-10T22:03:47.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI\\Infra\\Data\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "..\\Infra\\Data\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI\\Infra\\Data\\ApplicationContext.cs",
+              "RelativeToolTip": "..\\Infra\\Data\\ApplicationContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T22:18:11.699Z"
             }
           ]
         }
