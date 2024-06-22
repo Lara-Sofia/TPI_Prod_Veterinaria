@@ -5,6 +5,7 @@ using Application.Models;
 using ConsultaAlumnos.Domain.Exceptions;
 using Domain.Entities;
 using Domain.IRepository;
+using Domain.ViewModels;
 
 namespace Application.Services
 {
@@ -16,32 +17,25 @@ namespace Application.Services
             _userRepository = userRepository;
         }
 
-        public int AddVete(Veterinario userVete)
+        public bool AddVete(VeterinarioViewModel veterinario)
         {
-            var obj = new Veterinario();
-            obj.Name = userVete.Name;
-            obj.Matricula = userVete.Matricula;
-            obj.Email = userVete.Email;
-            obj.Password = userVete.Password;
-
-            return _userRepository.AddVete(obj);
-
+            return _userRepository.AddVete(veterinario);
         }
 
-        public bool DeleteUser(int id)
+        public bool DeleteVeterinario(int id)
         {
             var obj = _userRepository.GetVeteById(id);
             if (obj == null)
             {
                 throw new NotFoundException(nameof(Veterinario), id);
             }
-            return _userRepository.DeleteUser(id);
+            return _userRepository.DeleteVeterinario(id);
 
         }
 
-        public IEnumerable<User?> GetAllUsers()
+        public List<Veterinario?> GetAllVete()
         {
-            var list = _userRepository.GetAllUsers();
+            var list = _userRepository.GetAllVete();
 
             return list;
         }
@@ -51,9 +45,9 @@ namespace Application.Services
             return _userRepository.GetVeteById(id);
         }
 
-        public bool UpdateClientes(Cliente userCliente)
+        public bool UpdateVete(Veterinario userVeterinario)
         {
-            return _userRepository.UpdateClientes(userCliente);
+            return _userRepository.UpdateVete(userVeterinario);
         }
     }
 }

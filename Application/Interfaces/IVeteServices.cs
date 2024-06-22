@@ -1,5 +1,6 @@
 ﻿using Application.Models;
 using Domain.Entities;
+using Domain.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,9 @@ namespace Application.Interfaces
     public interface IVeteServices
     {
         Veterinario GetVeteById(int id);
-        IEnumerable<User> GetAllUsers();
-        int AddVete(Veterinario userVete);
-        bool DeleteUser(int id);
-        bool UpdateClientes(Cliente userCliente);
+        List<Veterinario> GetAllVete();
+        bool AddVete(VeterinarioViewModel veterinario);
+        bool DeleteVeterinario(int id);
+        bool UpdateVete(Veterinario userveterinario);
     }
 }

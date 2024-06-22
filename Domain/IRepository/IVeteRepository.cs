@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Domain.ViewModels;
 
 
 namespace Domain.IRepository
@@ -6,9 +7,9 @@ namespace Domain.IRepository
     public interface IVeteRepository
     {
         Veterinario GetVeteById(int id);
-        List<User> GetAllUsers();
-        int AddVete(Veterinario userVete);
-        bool DeleteUser(int id);
-        bool UpdateClientes(Cliente userCliente);
+        List<Veterinario> GetAllVete();
+        bool AddVete(VeterinarioViewModel veterinario);
+        bool DeleteVeterinario(int id);
+        bool UpdateVete(Veterinario userveterinario);
     }
 }

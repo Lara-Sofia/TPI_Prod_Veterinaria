@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sofia\\.nuget\\packages\\": {}
+    "C:\\Users\\Larata\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\sofia\\.nuget\\packages\\",
-      "outputPath": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\obj\\",
+      "projectPath": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\Larata\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sofia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Larata\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -47,15 +47,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Domain\\Domain.csproj": {
-              "projectPath": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Domain\\Domain.csproj"
+            "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Domain\\Domain.csproj"
             }
           }
         }
@@ -90,7 +89,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

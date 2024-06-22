@@ -1,3 +1,7 @@
+using Application.Interfaces;
+using Application.Services;
+using Domain.IRepository;
+using Domain.Repository;
 using Infra.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,6 +18,14 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlite(
 builder.Configuration["ConnectionStrings:DBConnectionString"], b => b.MigrationsAssembly("Infra")));
+
+
+#region INYECCIONES
+builder.Services.AddScoped<IVeteServices, VeteServices>();
+builder.Services.AddScoped<IVeteRepository, VeteRepository>();
+#endregion
+
+
 
 var app = builder.Build();
 

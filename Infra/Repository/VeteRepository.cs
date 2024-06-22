@@ -1,5 +1,6 @@
 ﻿using Domain.Entities;
 using Domain.IRepository;
+using Domain.ViewModels;
 using Infra.Data;
 
 namespace Domain.Repository
@@ -17,21 +18,35 @@ namespace Domain.Repository
             return _context.Veterinarios.FirstOrDefault(u => u.Id == id);
         }
 
-        public List<User> GetAllUsers()
+        public List<Veterinario> GetAllVete()
         {
-            return _context.Users.ToList();
+            return _context.Veterinarios.ToList();
         }
 
-        public int AddVete(Veterinario userVete)
+        public bool AddVete(VeterinarioViewModel veterinario)
         {
-            _context.Veterinarios.Add(userVete);
+            
+            var vete = _context.Veterinarios.FirstOrDefault(p => p.Id == veterinario.Id);
+
+            if (vete != null)
+            {
+                return false;
+            }
+            _context.Veterinarios.Add(new Veterinario
+            {
+                Id = vete.Id,
+                Name = veterinario.Name,
+                Matricula   = veterinario.Matricula,
+                Email = veterinario.Email,
+                Password = veterinario.Password,   
+            });
             _context.SaveChanges();
-            return userVete.Id;
+            return true;
         }
 
-        public bool DeleteUser(int id)
+        public bool DeleteVeterinario(int id)
         {
-            var user = _context.Users.FirstOrDefault(x => x.Id == id);
+            var user = _context.Veterinarios.FirstOrDefault(x => x.Id == id);
             if (user != null)
             {
                 return true;
@@ -40,17 +55,17 @@ namespace Domain.Repository
             return false;
         }
 
-        public bool UpdateClientes(Cliente userCliente)
+        public bool UpdateVete(Veterinario userVeterinario)
         {
-            var u = _context.Veterinarios.FirstOrDefault(x => x.Id == userCliente.Id);
+            var u = _context.Veterinarios.FirstOrDefault(x => x.Id == userVeterinario.Id);
             if (u != null)
             {
                 return true;
             }
 
-            u.Name = userCliente.Name;
-            u.Email = userCliente.Email;
-            u.Password = userCliente.Password;
+            u.Name = userVeterinario.Name;
+            u.Email = userVeterinario.Email;
+            u.Password = userVeterinario.Password;
 
             _context.SaveChanges();
             return false;

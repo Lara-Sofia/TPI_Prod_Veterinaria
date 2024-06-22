@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Application.Models
 {
-    public class UserDto
+    public class VeterinarioDto
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
-        public string Password { get; set; }
+        public int Matricula { get; set; }
+
 
     }
 }
