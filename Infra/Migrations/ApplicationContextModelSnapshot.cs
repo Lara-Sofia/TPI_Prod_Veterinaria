@@ -75,6 +75,9 @@ namespace Infra.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<bool>("Activo")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Discriminator")
                         .IsRequired()
                         .HasMaxLength(13)
@@ -113,7 +116,11 @@ namespace Infra.Migrations
                     b.HasBaseType("Domain.Entities.User");
 
                     b.Property<int>("Matricula")
+                        .HasMaxLength(5)
                         .HasColumnType("INTEGER");
+
+                    b.HasIndex("Matricula")
+                        .IsUnique();
 
                     b.HasDiscriminator().HasValue("Veterinario");
                 });

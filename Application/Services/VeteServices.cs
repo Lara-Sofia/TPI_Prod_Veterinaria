@@ -1,8 +1,8 @@
 ﻿
 
 using Application.Interfaces;
-using Application.Models;
 using ConsultaAlumnos.Domain.Exceptions;
+using Domain.Dto;
 using Domain.Entities;
 using Domain.IRepository;
 using Domain.ViewModels;
@@ -33,19 +33,17 @@ namespace Application.Services
 
         }
 
-        public List<Veterinario?> GetAllVete()
+        public List<VeterinarioDto?> GetAllVete()
         {
-            var list = _userRepository.GetAllVete();
-
-            return list;
+            return _userRepository.GetAllVete();;
         }
 
-        public Veterinario GetVeteById(int id)
+        public VeterinarioDto GetVeteById(int id)
         {
             return _userRepository.GetVeteById(id);
         }
 
-        public bool UpdateVete(Veterinario userVeterinario)
+        public bool UpdateVete(VeterinarioViewModel userVeterinario)
         {
             return _userRepository.UpdateVete(userVeterinario);
         }

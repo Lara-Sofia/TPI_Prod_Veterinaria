@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Domain\\Domain.csproj": {}
+    "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Domain\\Domain.csproj": {
+    "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Domain\\Domain.csproj",
+        "projectUniqueName": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Larata\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Domain\\obj\\",
+        "projectPath": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\sofia\\.nuget\\packages\\",
+        "outputPath": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Larata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sofia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

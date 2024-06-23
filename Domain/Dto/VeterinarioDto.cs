@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Models
-{
+namespace Domain.Dto
+{ 
     public class VeterinarioDto
     {
         public int Id { get; set; }

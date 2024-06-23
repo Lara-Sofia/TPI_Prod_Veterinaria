@@ -12,5 +12,14 @@ namespace Infra.Data
         public DbSet<Diagnostico> Diagnosticos { get; set; }
         public DbSet<Mascota> Mascotas { get; set; }
         public DbSet<Veterinario> Veterinarios { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Veterinario>()
+            .HasIndex(u => u.Matricula)
+            .IsUnique();
+        }
     }
 }

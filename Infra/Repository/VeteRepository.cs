@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Domain.Dto;
+using Domain.Entities;
 using Domain.IRepository;
 using Domain.ViewModels;
 using Infra.Data;
@@ -13,14 +14,30 @@ namespace Domain.Repository
             _context = context;
         }
 
-        public Veterinario? GetVeteById(int id)
+        public VeterinarioDto? GetVeteById(int id)
         {
-            return _context.Veterinarios.FirstOrDefault(u => u.Id == id);
+            return _context.Veterinarios.Select(v => new VeterinarioDto
+            {
+                Id = v.Id,
+                Name = v.Name,
+                Email = v.Email,
+                Matricula = v.Matricula,
+
+
+            }).FirstOrDefault();
         }
 
-        public List<Veterinario> GetAllVete()
+        public List<VeterinarioDto> GetAllVete()
         {
-            return _context.Veterinarios.ToList();
+            return _context.Veterinarios.Select(v => new VeterinarioDto
+            {
+                Id = v.Id,
+                Name = v.Name,
+                Email = v.Email,
+                Matricula = v.Matricula,
+
+
+            }).ToList();
         }
 
         public bool AddVete(VeterinarioViewModel veterinario)
@@ -34,7 +51,7 @@ namespace Domain.Repository
             }
             _context.Veterinarios.Add(new Veterinario
             {
-                Id = vete.Id,
+                Id = veterinario.Id,
                 Name = veterinario.Name,
                 Matricula   = veterinario.Matricula,
                 Email = veterinario.Email,
@@ -46,29 +63,31 @@ namespace Domain.Repository
 
         public bool DeleteVeterinario(int id)
         {
-            var user = _context.Veterinarios.FirstOrDefault(x => x.Id == id);
-            if (user != null)
+            var user = _context.Veterinarios.FirstOrDefault(x => x.Id == id && x.Activo);
+            if (user == null)
             {
-                return true;
+                return false;
             }
+            user.Activo = false;
             _context.SaveChanges();
-            return false;
+            return true;
         }
 
-        public bool UpdateVete(Veterinario userVeterinario)
+        public bool UpdateVete(VeterinarioViewModel userVeterinario)
         {
             var u = _context.Veterinarios.FirstOrDefault(x => x.Id == userVeterinario.Id);
-            if (u != null)
+            if (u == null)
             {
-                return true;
+                return false;
             }
 
             u.Name = userVeterinario.Name;
             u.Email = userVeterinario.Email;
             u.Password = userVeterinario.Password;
+            u.Matricula = userVeterinario.Matricula;
 
             _context.SaveChanges();
-            return false;
+            return true;
         }
 
     }

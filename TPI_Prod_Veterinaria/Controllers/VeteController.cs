@@ -1,5 +1,5 @@
 ﻿using Application.Interfaces;
-using Application.Models;
+using Domain.Dto;
 using Domain.Entities;
 using Domain.ViewModels;
 using Microsoft.AspNetCore.Http;
@@ -63,7 +63,7 @@ namespace TPI_Prod_Veterinaria.Controllers
         }
 
         [HttpPut("Update")]
-        public IActionResult Update([FromBody] Veterinario veterinario)
+        public IActionResult Update([FromBody] VeterinarioViewModel veterinario)
         {
             var updated = _veteServices.UpdateVete(veterinario);
 
@@ -72,7 +72,7 @@ namespace TPI_Prod_Veterinaria.Controllers
                 return NotFound("No se encontro el recurso en la base de datos");
             }
 
-            return NoContent();
+            return Ok();
         }
 
         [HttpDelete("Delete/{id}")]
