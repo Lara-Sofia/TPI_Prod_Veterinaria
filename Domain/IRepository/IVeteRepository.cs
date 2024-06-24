@@ -12,5 +12,7 @@ namespace Domain.IRepository
         bool AddVete(VeterinarioViewModel veterinario);
         bool DeleteVeterinario(int id);
         bool UpdateVete(VeterinarioViewModel userveterinario);
+        bool ReActivarVete(int id);
+
     }
 }

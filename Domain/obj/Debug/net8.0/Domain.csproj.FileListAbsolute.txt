@@ -34,3 +34,15 @@ C:\Users\Larata\Desktop\TPI_Prod_Veterinaria\Domain\obj\Debug\net8.0\Domain.dll
 C:\Users\Larata\Desktop\TPI_Prod_Veterinaria\Domain\obj\Debug\net8.0\refint\Domain.dll
 C:\Users\Larata\Desktop\TPI_Prod_Veterinaria\Domain\obj\Debug\net8.0\Domain.pdb
 C:\Users\Larata\Desktop\TPI_Prod_Veterinaria\Domain\obj\Debug\net8.0\ref\Domain.dll
+D:\TPI_Prod_Veterinaria\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\TPI_Prod_Veterinaria\Domain\bin\Debug\net8.0\Domain.dll
+D:\TPI_Prod_Veterinaria\Domain\bin\Debug\net8.0\Domain.pdb
+D:\TPI_Prod_Veterinaria\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\TPI_Prod_Veterinaria\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\TPI_Prod_Veterinaria\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\TPI_Prod_Veterinaria\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\TPI_Prod_Veterinaria\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+D:\TPI_Prod_Veterinaria\Domain\obj\Debug\net8.0\Domain.dll
+D:\TPI_Prod_Veterinaria\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\TPI_Prod_Veterinaria\Domain\obj\Debug\net8.0\Domain.pdb
+D:\TPI_Prod_Veterinaria\Domain\obj\Debug\net8.0\ref\Domain.dll

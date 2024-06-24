@@ -1,24 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\",
+  "WorkspaceRootPath": "D:\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB341037-8CA8-4A1F-AB53-34B0E7C68895}|..\\Infra\\Infra.csproj|c:\\users\\larata\\desktop\\tpi_prod_veterinaria\\infra\\repository\\veterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB341037-8CA8-4A1F-AB53-34B0E7C68895}|..\\Infra\\Infra.csproj|d:\\tpi_prod_veterinaria\\infra\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94E1D897-7FE8-4F7F-AFBA-FA32BFE1015D}|..\\Application\\Application.csproj|c:\\users\\larata\\desktop\\tpi_prod_veterinaria\\application\\services\\veteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|d:\\tpi_prod_veterinaria\\domain\\irepository\\iclienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94E1D897-7FE8-4F7F-AFBA-FA32BFE1015D}|..\\Application\\Application.csproj|c:\\users\\larata\\desktop\\tpi_prod_veterinaria\\application\\interfaces\\iveteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB341037-8CA8-4A1F-AB53-34B0E7C68895}|..\\Infra\\Infra.csproj|d:\\tpi_prod_veterinaria\\infra\\repository\\veterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|c:\\users\\larata\\desktop\\tpi_prod_veterinaria\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|d:\\tpi_prod_veterinaria\\domain\\irepository\\iveterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|c:\\users\\larata\\desktop\\tpi_prod_veterinaria\\domain\\irepository\\iveterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|d:\\tpi_prod_veterinaria\\domain\\viewmodels\\clienteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|c:\\users\\larata\\desktop\\tpi_prod_veterinaria\\domain\\dto\\veterinariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|d:\\tpi_prod_veterinaria\\domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,120 +28,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:277048299:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1762230859:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:970646735:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1080944400:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:31252280:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1606705272:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IVeteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Domain\\IRepository\\IVeteRepository.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\IRepository\\IVeteRepository.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Domain\\IRepository\\IVeteRepository.cs",
-              "RelativeToolTip": "..\\Domain\\IRepository\\IVeteRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T22:54:15.891Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VeteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Infra\\Repository\\VeteRepository.cs",
-              "RelativeDocumentMoniker": "..\\Infra\\Repository\\VeteRepository.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Infra\\Repository\\VeteRepository.cs",
-              "RelativeToolTip": "..\\Infra\\Repository\\VeteRepository.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAwwDwAAAAMAAAA",
+              "Title": "ClienteRepository.cs",
+              "DocumentMoniker": "D:\\TPI_Prod_Veterinaria\\Infra\\Repository\\ClienteRepository.cs",
+              "RelativeDocumentMoniker": "..\\Infra\\Repository\\ClienteRepository.cs",
+              "ToolTip": "D:\\TPI_Prod_Veterinaria\\Infra\\Repository\\ClienteRepository.cs",
+              "RelativeToolTip": "..\\Infra\\Repository\\ClienteRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T22:54:13.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IVeteServices.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Application\\Interfaces\\IVeteServices.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\IVeteServices.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Application\\Interfaces\\IVeteServices.cs",
-              "RelativeToolTip": "..\\Application\\Interfaces\\IVeteServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T22:54:07.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VeteServices.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Application\\Services\\VeteServices.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Services\\VeteServices.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Application\\Services\\VeteServices.cs",
-              "RelativeToolTip": "..\\Application\\Services\\VeteServices.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowCUAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T22:54:05.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Domain\\Entities\\User.cs",
-              "RelativeToolTip": "..\\Domain\\Entities\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T22:53:41.107Z",
+              "WhenOpened": "2024-06-24T23:15:46.152Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "VeterinarioDto.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Domain\\Dto\\VeterinarioDto.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Dto\\VeterinarioDto.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Domain\\Dto\\VeterinarioDto.cs",
-              "RelativeToolTip": "..\\Domain\\Dto\\VeterinarioDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAoAAAA",
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "D:\\TPI_Prod_Veterinaria\\Domain\\Entities\\Cliente.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Cliente.cs",
+              "ToolTip": "D:\\TPI_Prod_Veterinaria\\Domain\\Entities\\Cliente.cs",
+              "RelativeToolTip": "..\\Domain\\Entities\\Cliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T22:52:54.674Z",
+              "WhenOpened": "2024-06-24T23:14:32.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClienteViewModel.cs",
+              "DocumentMoniker": "D:\\TPI_Prod_Veterinaria\\Domain\\ViewModels\\ClienteViewModel.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\ViewModels\\ClienteViewModel.cs",
+              "ToolTip": "D:\\TPI_Prod_Veterinaria\\Domain\\ViewModels\\ClienteViewModel.cs",
+              "RelativeToolTip": "..\\Domain\\ViewModels\\ClienteViewModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T23:11:36.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IClienteRepository.cs",
+              "DocumentMoniker": "D:\\TPI_Prod_Veterinaria\\Domain\\IRepository\\IClienteRepository.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\IRepository\\IClienteRepository.cs",
+              "ToolTip": "D:\\TPI_Prod_Veterinaria\\Domain\\IRepository\\IClienteRepository.cs",
+              "RelativeToolTip": "..\\Domain\\IRepository\\IClienteRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T22:58:53.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IVeteRepository.cs",
+              "DocumentMoniker": "D:\\TPI_Prod_Veterinaria\\Domain\\IRepository\\IVeteRepository.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\IRepository\\IVeteRepository.cs",
+              "ToolTip": "D:\\TPI_Prod_Veterinaria\\Domain\\IRepository\\IVeteRepository.cs",
+              "RelativeToolTip": "..\\Domain\\IRepository\\IVeteRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T22:03:21.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VeteRepository.cs",
+              "DocumentMoniker": "D:\\TPI_Prod_Veterinaria\\Infra\\Repository\\VeteRepository.cs",
+              "RelativeDocumentMoniker": "..\\Infra\\Repository\\VeteRepository.cs",
+              "ToolTip": "D:\\TPI_Prod_Veterinaria\\Infra\\Repository\\VeteRepository.cs",
+              "RelativeToolTip": "..\\Infra\\Repository\\VeteRepository.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAADQAAABuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T22:03:01.64Z",
               "EditorCaption": ""
             }
           ]

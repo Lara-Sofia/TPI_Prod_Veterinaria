@@ -47,5 +47,15 @@ namespace Application.Services
         {
             return _userRepository.UpdateVete(userVeterinario);
         }
+
+        public bool ReActivarVete (int id)
+        {
+            var obj = _userRepository.GetVeteById(id);
+            if (obj == null)
+            {
+                throw new NotFoundException(nameof(Veterinario), id);
+            }
+            return _userRepository.ReActivarVete(id);
+        }
     }
 }

@@ -42,16 +42,21 @@ namespace Domain.Repository
 
         public bool AddVete(VeterinarioViewModel veterinario)
         {
-            
+
             var vete = _context.Veterinarios.FirstOrDefault(p => p.Id == veterinario.Id);
 
-            if (vete != null)
+            if (vete != null) //validamos el id
             {
                 return false;
             }
+
+            if (_context.Veterinarios.Any(p => p.Matricula == veterinario.Matricula)) //validamos la matricula
+            {
+                return false;
+            }
+
             _context.Veterinarios.Add(new Veterinario
             {
-                Id = veterinario.Id,
                 Name = veterinario.Name,
                 Matricula   = veterinario.Matricula,
                 Email = veterinario.Email,
@@ -89,6 +94,19 @@ namespace Domain.Repository
 
             _context.SaveChanges();
             return true;
+        }
+
+        public bool ReActivarVete(int id) 
+        {
+            var user = _context.Veterinarios.FirstOrDefault(x => x.Id == id && x.Activo == false);
+            if (user == null)
+            {
+                return false;
+            }
+            user.Activo = true;
+            _context.SaveChanges();
+            return true;
+
         }
 
     }

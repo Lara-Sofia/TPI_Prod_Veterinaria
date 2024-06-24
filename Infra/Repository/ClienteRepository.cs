@@ -1,5 +1,6 @@
 ﻿using Domain.Entities;
 using Domain.IRepository;
+using Domain.ViewModels;
 using Infra.Data;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,22 @@ namespace Infra.Repository
             _ClienteReContext = clienteReContext;
         }
 
+        public bool AddCliente(ClienteViewModel cliente)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool DeleteCliente(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public ICollection<Mascota> GetMascotas(int clienteId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool UpdateCliente(int id)
         {
             throw new NotImplementedException();
         }

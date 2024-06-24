@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Larata\\.nuget\\packages\\": {}
+    "C:\\Users\\sofia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Application\\Application.csproj",
+      "projectUniqueName": "D:\\TPI_Prod_Veterinaria\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\Larata\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Application\\obj\\",
+      "projectPath": "D:\\TPI_Prod_Veterinaria\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\sofia\\.nuget\\packages\\",
+      "outputPath": "D:\\TPI_Prod_Veterinaria\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Larata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sofia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +53,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Domain\\Domain.csproj"
+            "D:\\TPI_Prod_Veterinaria\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\TPI_Prod_Veterinaria\\Domain\\Domain.csproj"
             }
           }
         }
@@ -89,7 +89,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
