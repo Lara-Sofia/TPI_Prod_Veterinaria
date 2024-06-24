@@ -35,7 +35,7 @@ namespace Application.Services
 
         public List<VeterinarioDto?> GetAllVete()
         {
-            return _userRepository.GetAllVete();;
+            return _userRepository.GetAllVete();
         }
 
         public VeterinarioDto GetVeteById(int id)

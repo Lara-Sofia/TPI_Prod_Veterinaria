@@ -22,7 +22,7 @@ namespace Domain.Repository
                 Name = v.Name,
                 Email = v.Email,
                 Matricula = v.Matricula,
-
+                Activo = v.Activo
 
             }).FirstOrDefault();
         }
@@ -35,7 +35,7 @@ namespace Domain.Repository
                 Name = v.Name,
                 Email = v.Email,
                 Matricula = v.Matricula,
-
+                Activo = v.Activo,
 
             }).ToList();
         }
@@ -55,7 +55,8 @@ namespace Domain.Repository
                 Name = veterinario.Name,
                 Matricula   = veterinario.Matricula,
                 Email = veterinario.Email,
-                Password = veterinario.Password,   
+                Password = veterinario.Password,  
+                Activo = true,
             });
             _context.SaveChanges();
             return true;
