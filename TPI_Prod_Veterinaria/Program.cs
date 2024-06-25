@@ -3,6 +3,7 @@ using Application.Services;
 using Domain.IRepository;
 using Domain.Repository;
 using Infra.Data;
+using Infra.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +22,8 @@ builder.Configuration["ConnectionStrings:DBConnectionString"], b => b.Migrations
 
 
 #region INYECCIONES
+builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+builder.Services.AddScoped<IClienteService, ClienteService>();
 builder.Services.AddScoped<IVeteServices, VeteServices>();
 builder.Services.AddScoped<IVeteRepository, VeteRepository>();
 #endregion

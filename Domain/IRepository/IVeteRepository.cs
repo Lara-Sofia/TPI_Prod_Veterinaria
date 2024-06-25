@@ -9,7 +9,7 @@ namespace Domain.IRepository
     {
         VeterinarioDto GetVeteById(int id);
         List<VeterinarioDto> GetAllVete();
-        bool AddVete(VeterinarioViewModel veterinario);
+        (bool, string) AddVete(VeterinarioViewModel veterinario);
         bool DeleteVeterinario(int id);
         bool UpdateVete(VeterinarioViewModel userveterinario);
         bool ReActivarVete(int id);

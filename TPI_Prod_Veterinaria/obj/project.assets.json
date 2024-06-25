@@ -3004,19 +3004,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sofia\\.nuget\\packages\\": {}
+    "C:\\Users\\Larata\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria.csproj",
+      "projectUniqueName": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria.csproj",
       "projectName": "TPI_Prod_Veterinaria",
-      "projectPath": "D:\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria.csproj",
-      "packagesPath": "C:\\Users\\sofia\\.nuget\\packages\\",
-      "outputPath": "D:\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\obj\\",
+      "projectPath": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria.csproj",
+      "packagesPath": "C:\\Users\\Larata\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sofia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Larata\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3030,11 +3030,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\TPI_Prod_Veterinaria\\Application\\Application.csproj": {
-              "projectPath": "D:\\TPI_Prod_Veterinaria\\Application\\Application.csproj"
+            "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Application\\Application.csproj"
             },
-            "D:\\TPI_Prod_Veterinaria\\Infra\\Infra.csproj": {
-              "projectPath": "D:\\TPI_Prod_Veterinaria\\Infra\\Infra.csproj"
+            "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Infra\\Infra.csproj": {
+              "projectPath": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Infra\\Infra.csproj"
             }
           }
         }
@@ -3084,7 +3084,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

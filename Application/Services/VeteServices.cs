@@ -17,7 +17,7 @@ namespace Application.Services
             _userRepository = userRepository;
         }
 
-        public bool AddVete(VeterinarioViewModel veterinario)
+        public (bool, string) AddVete(VeterinarioViewModel veterinario)
         {
             return _userRepository.AddVete(veterinario);
         }

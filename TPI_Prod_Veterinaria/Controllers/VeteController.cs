@@ -48,11 +48,11 @@ namespace TPI_Prod_Veterinaria.Controllers
         [HttpPost("Create")]
         public IActionResult AddVete([FromBody] VeterinarioViewModel veterinario)
         {
-            var created = _veteServices.AddVete(veterinario);
+            var (created, errorMessage) = _veteServices.AddVete(veterinario);
 
             if (!created)
             {
-                return BadRequest("Id o Matricula existente, por favor revisar :)");
+                return BadRequest(errorMessage);
             }
 
             string baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";
@@ -61,6 +61,7 @@ namespace TPI_Prod_Veterinaria.Controllers
 
             return Created(locationUrl, veterinario);
         }
+
 
         [HttpPut("Update")]
         public IActionResult Update([FromBody] VeterinarioViewModel veterinario)

@@ -40,32 +40,34 @@ namespace Domain.Repository
             }).ToList();
         }
 
-        public bool AddVete(VeterinarioViewModel veterinario)
+        public (bool, string) AddVete(VeterinarioViewModel veterinario)
         {
 
             var vete = _context.Veterinarios.FirstOrDefault(p => p.Id == veterinario.Id);
 
-            if (vete != null) //validamos el id
+            if (vete != null)
             {
-                return false;
-            }
 
-            if (_context.Veterinarios.Any(p => p.Matricula == veterinario.Matricula)) //validamos la matricula
+                return (false, "Id existente");
+            }
+            // Verifica si ya existe un veterinario con la misma Matricula
+            if (_context.Veterinarios.Any(p => p.Matricula == veterinario.Matricula))
             {
-                return false;
+                return (false, "Matricula existente");
             }
-
             _context.Veterinarios.Add(new Veterinario
             {
+                Id = veterinario.Id,
                 Name = veterinario.Name,
-                Matricula   = veterinario.Matricula,
+                Matricula = veterinario.Matricula,
                 Email = veterinario.Email,
-                Password = veterinario.Password,  
+                Password = veterinario.Password,
                 Activo = true,
             });
             _context.SaveChanges();
-            return true;
+            return (true, null);
         }
+
 
         public bool DeleteVeterinario(int id)
         {

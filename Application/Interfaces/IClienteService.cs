@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.IRepository
+namespace Application.Interfaces
 {
-    public interface IClienteRepository
+    public interface IClienteService
     {
         ClienteDto GetClienteById(int id);
         List<ClienteDto> GetAllCliente();
