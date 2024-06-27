@@ -1,8 +1,8 @@
 ﻿using Application.Interfaces;
+using Application.Models.DTOs;
+using Application.Models.Requets;
 using Application.Services;
-using Domain.Dto;
-using Domain.ViewModels;
-using Microsoft.AspNetCore.Http;
+using Domain.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TPI_Prod_Veterinaria.Controllers
@@ -17,104 +17,63 @@ namespace TPI_Prod_Veterinaria.Controllers
             _clienteService = clienteService;
         }
 
-        [HttpGet("GetAllCliente")]
-        public ActionResult<List<ClienteDto?>> GetAllCliente()
+        [HttpPost]
+        public IActionResult Create([FromBody] ClienteCreateRequets clienteCreateRequets)
         {
-            var response = _clienteService.GetAllCliente();
+            var newObj = _clienteService.Create(clienteCreateRequets);
 
-            if (!response.Any())
-            {
-                return NotFound("No se encontraron recursos en la base de datos");
-            }
-
-            return Ok(response);
+            return CreatedAtAction(nameof(Get), new { id = newObj.Id }, clienteCreateRequets);
         }
 
-        [HttpGet("GetById/{id}")]
-        public ActionResult<ClienteDto?> GetClienteById([FromRoute] int id)
+        [HttpGet("{id}")]
+        public ActionResult<ClienteDto> Get([FromRoute] int id)
         {
-            var cliente = _clienteService.GetClienteById(id);
-
-            if (cliente == null)
+            //ver
+            try
             {
-                return NotFound("No se encontro el recurso en la base de datos");
+                return _clienteService.GetById(id);
             }
-
-            return Ok(cliente);
+            catch (NotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
 
-        [HttpGet("clientes/{clienteId}/mascotas")]
-        public IActionResult GetMascotas(int clienteId)
+        [HttpGet]
+        public ActionResult<List<ClienteDto>> GetAll()
         {
-            // Obtener las mascotas del cliente desde el repositorio
-            var mascotas = _clienteService.GetMascotasByClienteId(clienteId);
-
-            // Verificar si se encontraron mascotas
-            if (mascotas == null || !mascotas.Any())
-            {
-                return NotFound(new { Message = "No se encontraron mascotas para este cliente." });
-            }
-
-            // Devolver las mascotas en formato JSON
-            return Ok(mascotas);
+            return _clienteService.GetAll();
         }
 
-        [HttpPost("CreateCliente")]
-        public IActionResult AddCliente([FromBody] ClienteViewModel cliente)
+        [HttpPut("{id}")]
+        public IActionResult Update([FromRoute] int id, [FromBody] ClienteUpdateRequets clienteUpdateRequets)
         {
-            var created = _clienteService.AddCliente(cliente);
 
-            if (!created)
+            try
             {
-                return BadRequest("Id existente");
+                _clienteService.Update(id, clienteUpdateRequets);
+                return NoContent();
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound(ex.Message);
             }
 
-            string baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";
-            string apiAndEndpointUrl = $"api/Producto/GetById";
-            string locationUrl = $"{baseUrl}/{apiAndEndpointUrl}/{cliente.Id}";
-
-            return Created(locationUrl, cliente);
         }
 
-        [HttpPut("UpdateCliente")]
-        public IActionResult UpdateCliente([FromBody] ClienteViewModel cliente)
+        [HttpDelete("{id}")]
+        public IActionResult Delete([FromRoute] int id)
         {
-            var updated = _clienteService.UpdateCliente(cliente);
-
-            if (!updated)
+            try
             {
-                return NotFound("No se encontro el recurso en la base de datos");
+                _clienteService.Delete(id);
+                return NoContent();
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound(ex.Message);
             }
 
-            return Ok();
         }
-
-        [HttpDelete("DeleteCliente/{id}")]
-        public IActionResult DeleteCliente([FromRoute] int id)
-        {
-            var deleted = _clienteService.DeleteCliente(id);
-
-            if (!deleted)
-            {
-                return NotFound("No se encontro el recurso en la base de datos");
-            }
-
-            return NoContent();
-        }
-
-        [HttpPut("ReActivarCliente/{id}")]
-        public IActionResult ReActivarCliente([FromRoute] int id)
-        {
-            var reactive = _clienteService.ReActivarCliente(id);
-
-            if (!reactive)
-            {
-                return NotFound("No se encontro el recurso en la base de datos");
-            }
-
-            return Ok();
-        }
-
-
     }
 }

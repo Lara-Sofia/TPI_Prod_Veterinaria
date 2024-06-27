@@ -1,7 +1,6 @@
 using Application.Interfaces;
 using Application.Services;
 using Domain.IRepository;
-using Domain.Repository;
 using Infra.Data;
 using Infra.Repository;
 using Microsoft.EntityFrameworkCore;

@@ -3,9 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94E1D897-7FE8-4F7F-AFBA-FA32BFE1015D}|..\\Application\\Application.csproj|c:\\users\\larata\\desktop\\tpi_prod_veterinaria\\application\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|c:\\users\\larata\\desktop\\tpi_prod_veterinaria\\tpi_prod_veterinaria\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -17,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 158,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,37 +51,22 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 242,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClienteService.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Application\\Services\\ClienteService.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Services\\ClienteService.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Application\\Services\\ClienteService.cs",
-              "RelativeToolTip": "..\\Application\\Services\\ClienteService.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAwwCoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T01:14:05.522Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:2089640372:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
               "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\ClienteController.cs",
               "RelativeToolTip": "Controllers\\ClienteController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T00:35:18.006Z",
+              "WhenOpened": "2024-06-27T02:41:19.075Z",
               "EditorCaption": ""
             }
           ]
