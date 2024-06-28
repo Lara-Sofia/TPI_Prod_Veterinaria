@@ -1,22 +1,16 @@
-﻿
-using Domain.Dto;
+﻿using Application.Models.DTOs;
+using Application.Models.Requets;
 using Domain.Entities;
-using Domain.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Application.Interfaces
 {
     public interface IVeteServices
     {
-        VeterinarioDto GetVeteById(int id);
-        List<VeterinarioDto> GetAllVete();
-        (bool, string) AddVete(VeterinarioViewModel veterinario);
-        bool DeleteVeterinario(int id);
-        bool UpdateVete(VeterinarioViewModel userveterinario);
-        bool ReActivarVete (int id);
+        Veterinario Create(VeterinarioCreateRequets veterinarioCreateRequets);
+        void Delete(int id);
+        List<VeterinarioDto> GetAll();
+        VeterinarioDto GetById(int id);
+        void Update(int id, VeterinarioUpdateRequets veterinarioUpdateRequets);
     }
 }

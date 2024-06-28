@@ -3,12 +3,14 @@ using Application.Models.DTOs;
 using Application.Models.Requets;
 using Application.Services;
 using Domain.Exceptions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TPI_Prod_Veterinaria.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ClienteController : ControllerBase
     {
         private readonly IClienteService _clienteService;

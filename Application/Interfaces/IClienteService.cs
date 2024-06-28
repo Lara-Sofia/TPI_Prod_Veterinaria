@@ -1,22 +1,16 @@
-﻿using Domain.Dto;
+﻿using Application.Models.DTOs;
+using Application.Models.Requets;
 using Domain.Entities;
-using Domain.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Interfaces
 {
     public interface IClienteService
     {
-        ClienteDto GetClienteById(int id);
-        List<ClienteDto> GetAllCliente();
-        ICollection<Mascota> GetMascotasByClienteId(int clienteId);
-        bool DeleteCliente(int id);
-        bool AddCliente(ClienteViewModel cliente);
-        bool UpdateCliente(ClienteViewModel cliente);
-        bool ReActivarCliente(int id);
+        Cliente Create(ClienteCreateRequets clienteCreateRequets);
+
+        void Delete(int id);
+        List<ClienteDto> GetAll();
+        ClienteDto GetById(int id);
+        void Update(int id, ClienteUpdateRequets clienteUpdateRequets);
     }
 }

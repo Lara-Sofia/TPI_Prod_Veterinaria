@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|c:\\users\\larata\\desktop\\tpi_prod_veterinaria\\tpi_prod_veterinaria\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|c:\\users\\larata\\desktop\\tpi_prod_veterinaria\\tpi_prod_veterinaria\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|solutionrelative:controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,14 +59,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "Controllers\\ClienteController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T02:41:19.075Z",
+              "WhenOpened": "2024-06-28T00:39:39.584Z",
               "EditorCaption": ""
             }
           ]

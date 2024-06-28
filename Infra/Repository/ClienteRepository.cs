@@ -1,114 +1,53 @@
-﻿using Domain.Dto;
-using Domain.Entities;
+﻿using Domain.Entities;
 using Domain.IRepository;
-using Domain.ViewModels;
 using Infra.Data;
-using Microsoft.EntityFrameworkCore;
 
 namespace Infra.Repository
 {
     public class ClienteRepository : IClienteRepository
     {
 
-        private readonly ApplicationContext _ClienteReContext;
-        public ClienteRepository(ApplicationContext clienteReContext)
+        private readonly ApplicationContext _context;
+        public ClienteRepository(ApplicationContext context)
         {
-            _ClienteReContext = clienteReContext;
+            _context = context;
         }
 
-        public ClienteDto? GetClienteById(int id)
+        public Cliente Add(Cliente cliente)
         {
-            return _ClienteReContext.Clientes.Select(c => new ClienteDto
-            {
-                Id = c.Id,
-                Name = c.Name,
-                Email = c.Email,
-                Activo = c.Activo
-
-            }).FirstOrDefault();
-        }
-        public List<ClienteDto> GetAllCliente()
-        {
-            return _ClienteReContext.Clientes.Select(c => new ClienteDto
-            {
-                Id = c.Id,
-                Name = c.Name,
-                Email = c.Email,
-                Password = c.Password,
-                Activo = c.Activo,
-
-            }).ToList();
+            _context.Clientes.Add(cliente);
+            _context.SaveChanges();
+            return cliente;
         }
 
-        public bool AddCliente(ClienteViewModel cliente)
+        public void Delete(Cliente cliente)
         {
-            var cli = _ClienteReContext.Clientes.FirstOrDefault(x => x.Id == cliente.Id);
-            if (cli != null)
-            {
-
-                return false;
-            }
-            
-            _ClienteReContext.Clientes.Add(new Cliente
-            {
-                Id = cliente.Id,
-                Name = cliente.Name,
-                Email = cliente.Email,
-                Password = cliente.Password,
-                Activo = true,
-            });
-            _ClienteReContext.SaveChanges();
-            return true;
+            _context.Remove(cliente);
+            _context.SaveChanges();
         }
 
-        public bool DeleteCliente(int id)
+        public List<Cliente> GetAll()
         {
-            var cliente = _ClienteReContext.Clientes.FirstOrDefault(x => x.Id == id && x.Activo);
-            if (cliente == null)
-            {
-                return false;
-            }
-            cliente.Activo = false;
-            _ClienteReContext.SaveChanges();
-            return true;
+            return _context.Clientes.ToList();
         }
 
-        public ICollection<Mascota> GetMascotas(int clienteId)
+        public Cliente? GetById(int id)
         {
-            throw new NotImplementedException();
+            return _context.Clientes
+               .FirstOrDefault(x => x.Id == id);
         }
 
-        public bool UpdateCliente(ClienteViewModel cliente)
+        public void Update(Cliente cliente)
         {
-            var c = _ClienteReContext.Clientes.FirstOrDefault(x => x.Id == cliente.Id);
-            if (c == null)
-            {
-                return false;
-            }
 
-            c.Name = cliente.Name;
-            c.Email = cliente.Email;
-            c.Password = cliente.Password;
-            _ClienteReContext.SaveChanges();
-            return true;
+            _context.Update(cliente);
+            _context.SaveChanges();
         }
 
-        public bool ReActivarCliente(int id)
+        public void SaveChanges()
         {
-            var c = _ClienteReContext.Clientes.FirstOrDefault(x => x.Id == id && x.Activo == false);
-            if (c == null)
-            {
-                return false;
-            }
-            c.Activo = true;
-            _ClienteReContext.SaveChanges();
-            return true;
-
+            _context.SaveChanges();
         }
 
-        public ICollection<Mascota> GetMascotasByClienteId(int clienteId)
-        {
-            return _ClienteReContext.Mascotas.Where(m => m.ClienteId == clienteId).ToList();
-        }
     }
 }
