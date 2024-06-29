@@ -4,6 +4,7 @@ using Application.Models.Requets;
 using Domain.Exceptions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 
 
@@ -11,7 +12,7 @@ namespace TPI_Prod_Veterinaria.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    [Authorize(Policy = "VeterinarioPolicy")]
     public class VeteController : ControllerBase
     {
         //inyectamos servicio
@@ -27,6 +28,7 @@ namespace TPI_Prod_Veterinaria.Controllers
         [HttpPost]
         public IActionResult Create([FromBody]  VeterinarioCreateRequets veterinarioCreateRequets)
         {
+            
             var newObj = _veteServices.Create(veterinarioCreateRequets);
 
             return CreatedAtAction(nameof(Get), new { id = newObj.Id }, veterinarioCreateRequets);

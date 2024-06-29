@@ -5,12 +5,13 @@ using Application.Services;
 using Domain.Exceptions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace TPI_Prod_Veterinaria.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    [Authorize(Policy = "ClientePolicy")]
     public class ClienteController : ControllerBase
     {
         private readonly IClienteService _clienteService;
@@ -44,6 +45,7 @@ namespace TPI_Prod_Veterinaria.Controllers
         [HttpGet]
         public ActionResult<List<ClienteDto>> GetAll()
         {
+            //int userId = int.Parse(User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value ?? "");
             return _clienteService.GetAll();
         }
 

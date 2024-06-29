@@ -15,9 +15,6 @@ namespace Domain.Entities
         public string Password { get; set; }
         public bool Activo { get; set; } = true;
 
-        /*
-        [Column(TypeName = "nvarchar(20)")]
-        public string UserType { get; set; }*/
     }
 
 }

@@ -24,7 +24,7 @@ namespace Infra.Service
             _options = options.Value;
         }
 
-        private User ValidateUser(AuthenticationRequest authenticationRequest)
+        private User? ValidateUser(AuthenticationRequest authenticationRequest)
         {
             if ((string.IsNullOrEmpty(authenticationRequest.Email)) || (string.IsNullOrEmpty(authenticationRequest.Password)))
             {
@@ -41,13 +41,14 @@ namespace Infra.Service
             {
                 return user;
             }
+
             return null;
         }
 
         public string Autenticar(AuthenticationRequest authenticationRequest)
         {
             var user = ValidateUser(authenticationRequest); //PRIMER PASO - EL CHOCLO DE ARRIBA
-
+            
             if (user == null)
             {
                 throw new NotAllowedException("La autenticación ha fallado");
@@ -65,6 +66,15 @@ namespace Infra.Service
             claimsForToken.Add(new Claim("sub", user.Id.ToString()));
             //sub es una key que es el identificar único del usuario (convención) 
             claimsForToken.Add(new Claim("email", user.Email.ToString()));
+            if (user is Cliente)
+            {
+                claimsForToken.Add(new Claim("role", "Cliente"));
+            }
+            else if (user is Veterinario)
+            {
+                claimsForToken.Add(new Claim("role", "Veterinario"));
+            }
+
             //claimsForToken.Add(new Claim("bla", user.Password.ToString())); INFO SENSIBLE NO SE PUEDE MANDAR EN UN TOKEN - LAS CLAIMS NO ESTÁN HASHEADAS ESTÁN
             //CODIFICADO, LA FIRMA ES LO QUE ESTÁ HASHEADO. 
             /*Cualquiera que tiene el token puede verlo, pero dura un tiempo, por eso usamos las autenticación*/

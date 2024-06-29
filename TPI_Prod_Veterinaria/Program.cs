@@ -62,6 +62,13 @@ builder.Services.AddAuthentication("Bearer") //"Bearer" es el tipo de auntentica
     }
 );
 
+// Configurar políticas de autorización
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("ClientePolicy", policy => policy.RequireClaim("role", "Cliente"));
+    options.AddPolicy("VeterinarioPolicy", policy => policy.RequireClaim("role", "Veterinario"));
+});
+
 #region INYECCIONES
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IClienteService, ClienteService>();

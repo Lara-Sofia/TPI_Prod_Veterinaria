@@ -5,6 +5,13 @@
     {
       "AbsoluteMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|c:\\users\\larata\\desktop\\tpi_prod_veterinaria\\tpi_prod_veterinaria\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|solutionrelative:controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB341037-8CA8-4A1F-AB53-34B0E7C68895}|..\\Infra\\Infra.csproj|c:\\users\\larata\\desktop\\tpi_prod_veterinaria\\infra\\service\\autenticacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|c:\\users\\larata\\desktop\\tpi_prod_veterinaria\\tpi_prod_veterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +21,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 158,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T02:31:05.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AutenticacionService.cs",
+              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Infra\\Service\\AutenticacionService.cs",
+              "RelativeDocumentMoniker": "..\\Infra\\Service\\AutenticacionService.cs",
+              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\Infra\\Service\\AutenticacionService.cs",
+              "RelativeToolTip": "..\\Infra\\Service\\AutenticacionService.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAUwDsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T02:27:09.052Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:277048299:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
@@ -53,20 +86,16 @@
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:2089640372:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthenticationController.cs",
-              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\AuthenticationController.cs",
-              "RelativeToolTip": "Controllers\\AuthenticationController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAdAAAA",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Larata\\Desktop\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAkwEQAAABhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T00:39:39.584Z",
+              "WhenOpened": "2024-06-28T22:28:56.686Z",
               "EditorCaption": ""
             }
           ]
