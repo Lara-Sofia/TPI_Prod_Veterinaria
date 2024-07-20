@@ -19,6 +19,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen(setupAction =>
 {
     setupAction.AddSecurityDefinition("TPI_Prod_VeterinariaApiBearerAuth", new OpenApiSecurityScheme() //Esto va a permitir usar swagger con el token.
@@ -47,10 +48,17 @@ builder.Services.AddSwaggerGen(setupAction =>
 builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlite(
 builder.Configuration["ConnectionStrings:DBConnectionString"], b => b.MigrationsAssembly("Infra")));
 
+// Configurar políticas de autorización
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("ClientePolicy", policy => policy.RequireClaim("http://schemas.microsoft.com/ws/2008/06/identity/claims/role", "Cliente"));
+    options.AddPolicy("VeterinarioPolicy", policy => policy.RequireClaim("http://schemas.microsoft.com/ws/2008/06/identity/claims/role", "Veterinario")); //ecnontre en internet que habia que usar ese link porque sino no lo tomaba
+});
+
 builder.Services.AddAuthentication("Bearer") //"Bearer" es el tipo de auntenticación que tenemos que elegir después en PostMan para pasarle el token
     .AddJwtBearer(options => //Acá definimos la configuración de la autenticación. le decimos qué cosas queremos comprobar. La fecha de expiración se valida por defecto.
     {
-        options.TokenValidationParameters = new()
+        options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuer = true,
             ValidateAudience = true,
@@ -62,22 +70,16 @@ builder.Services.AddAuthentication("Bearer") //"Bearer" es el tipo de auntentica
     }
 );
 
-// Configurar políticas de autorización
-builder.Services.AddAuthorization(options =>
-{
-    options.AddPolicy("ClientePolicy", policy => policy.RequireClaim("role", "Cliente"));
-    options.AddPolicy("VeterinarioPolicy", policy => policy.RequireClaim("role", "Veterinario"));
-});
-
 #region INYECCIONES
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IClienteService, ClienteService>();
-builder.Services.AddScoped<IVeteServices, VeteServices>();
 builder.Services.AddScoped<IVeteRepository, VeteRepository>();
-builder.Services.Configure<AutenticacionServiceOptions>(
-    builder.Configuration.GetSection(AutenticacionServiceOptions.AutenticacionService));
-builder.Services.AddScoped<ICustomAuthenticationService, AutenticacionService>();
+builder.Services.AddScoped<IVeteServices, VeteServices>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IMascotaRepository, MascotaRepository>();
+builder.Services.Configure<AutenticacionServiceOptions>(
+builder.Configuration.GetSection(AutenticacionServiceOptions.AutenticacionService));
+builder.Services.AddScoped<ICustomAuthenticationService, AutenticacionService>();
 #endregion
 
 

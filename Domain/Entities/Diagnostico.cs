@@ -14,16 +14,10 @@ namespace Domain.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Required]
-        [StringLength(180)]
-        public string Descripcion { get; set; }
-
-        [Column(TypeName = "datetime")]
-        public DateTime CreationDate { get; private set; } = DateTime.Now;
-
         [ForeignKey("MascotaId")]
         public int MascotaId { get; set; }
         public Mascota Mascota { get; set; }
+        public ICollection<DiagnosticoLinea> DiagnosticoLineas { get ; set; } 
         
     }
 }

@@ -85,6 +85,13 @@ namespace TPI_Prod_Veterinaria.Controllers
 
         }
 
+        [HttpGet("test-authorization")]
+        public IActionResult TestAuthorization()
+        {
+            var claims = User.Claims.Select(c => new { c.Type, c.Value }).ToList();
+            return Ok(claims);
+        }
+
 
     }
 }

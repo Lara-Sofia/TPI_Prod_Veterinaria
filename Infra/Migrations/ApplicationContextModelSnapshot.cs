@@ -23,14 +23,6 @@ namespace Infra.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("CreationDate")
-                        .HasColumnType("datetime");
-
-                    b.Property<string>("Descripcion")
-                        .IsRequired()
-                        .HasMaxLength(180)
-                        .HasColumnType("TEXT");
-
                     b.Property<int>("MascotaId")
                         .HasColumnType("INTEGER");
 
@@ -44,6 +36,30 @@ namespace Infra.Migrations
                     b.HasIndex("VeterinarioId");
 
                     b.ToTable("Diagnosticos");
+                });
+
+            modelBuilder.Entity("Domain.Entities.DiagnosticoLinea", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreationDate")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("DiagnosticoId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DiagnosticoId");
+
+                    b.ToTable("DiagnosticoLineas");
                 });
 
             modelBuilder.Entity("Domain.Entities.Mascota", b =>
@@ -140,6 +156,17 @@ namespace Infra.Migrations
                     b.Navigation("Mascota");
                 });
 
+            modelBuilder.Entity("Domain.Entities.DiagnosticoLinea", b =>
+                {
+                    b.HasOne("Domain.Entities.Diagnostico", "Diagnostico")
+                        .WithMany("DiagnosticoLineas")
+                        .HasForeignKey("DiagnosticoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Diagnostico");
+                });
+
             modelBuilder.Entity("Domain.Entities.Mascota", b =>
                 {
                     b.HasOne("Domain.Entities.Cliente", "Cliente")
@@ -149,6 +176,11 @@ namespace Infra.Migrations
                         .IsRequired();
 
                     b.Navigation("Cliente");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Diagnostico", b =>
+                {
+                    b.Navigation("DiagnosticoLineas");
                 });
 
             modelBuilder.Entity("Domain.Entities.Mascota", b =>

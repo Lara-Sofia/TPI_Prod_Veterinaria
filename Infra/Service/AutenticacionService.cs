@@ -32,6 +32,7 @@ namespace Infra.Service
             }
 
             var user = _userRepository.GetByEmail(authenticationRequest.Email);
+
             if (user == null)
             {
                 return null;
