@@ -7,8 +7,10 @@ namespace Application.Interfaces
     public interface IMascotaService
     {
         Mascota Create(MascotaClienteRequest mascotaClienteRequest);
-        List<Mascota> GetAll();
+        List<MascotaDto> GetAll();
         MascotaDto? GetById(int id);
-        void Update(Mascota mascota);
+        void Update(int id, MascotaUpdateRequest mascotaUpdateRequest);
+
+        void Delete(int id);
     }
 }

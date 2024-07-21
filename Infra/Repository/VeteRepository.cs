@@ -19,9 +19,9 @@ namespace Infra.Repository
             return veterinario;
         }
 
-        public void Delete(Veterinario voterinario)
+        public void Delete(Veterinario veterinario)
         {
-            _context.Remove(voterinario);
+            _context.Remove(veterinario);
             _context.SaveChanges();
         }
 

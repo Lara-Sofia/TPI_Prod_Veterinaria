@@ -44,6 +44,12 @@ namespace Infra.Repository
             _context.SaveChanges();
         }
 
+        public void Delete(Mascota mascota) 
+        {
+            _context.Remove(mascota);
+            _context.SaveChanges();
+        }
+
         public void SaveChanges()
         {
             _context.SaveChanges();

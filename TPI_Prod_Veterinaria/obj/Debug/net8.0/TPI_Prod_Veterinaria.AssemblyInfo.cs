@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TPI_Prod_Veterinaria")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c878627b67d7feaeb816c4fc5cfe5384c95349c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+716e9313da2f8249a821e787d776fdccd71ea583")]
 [assembly: System.Reflection.AssemblyProductAttribute("TPI_Prod_Veterinaria")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TPI_Prod_Veterinaria")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -10,6 +10,7 @@ namespace Application.Models.DTOs
 {
     public class MascotaDto
     {
+        public int Id { get; set; }
         public int ClienteId { get; set; }
         
         [JsonIgnore]
@@ -20,11 +21,21 @@ namespace Application.Models.DTOs
         public static MascotaDto Create(Mascota mascota)
         {
             var dto = new MascotaDto();
+            dto.Id = mascota.Id;
             dto.ClienteId = mascota.ClienteId;
-            //dto.Cliente.Name = mascota.Cliente.Name;
             dto.ClienteName = mascota.Cliente.Name;
             dto.Name = mascota.Name;
             return dto;
+        }
+
+        public static List<MascotaDto> CreateList(IEnumerable<Mascota> mascotas)
+        {
+            List<MascotaDto> listDto = [];
+            foreach (var masc in mascotas)
+            {
+                listDto.Add(Create(masc));
+            }
+            return listDto;
         }
     }
 }

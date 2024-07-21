@@ -31,9 +31,10 @@ namespace Application.Services
            
         }
 
-        public List<Mascota> GetAll()
+        public List<MascotaDto> GetAll()
         {
-            throw new NotImplementedException();
+            var list = _mascotaRepository.GetAll();
+            return MascotaDto.CreateList(list);
         }
 
         public MascotaDto GetById(int id)
@@ -44,9 +45,28 @@ namespace Application.Services
             return dto;
         }
 
-        public void Update(Mascota mascota)
+        public void Update(int id, MascotaUpdateRequest mascotaUpdateRequest)
         {
+            var obj = _mascotaRepository.GetById(id);
+
+            if (obj == null)
+                throw new NotFoundException(nameof(Mascota), id);
             
+            if (mascotaUpdateRequest.Name != string.Empty) obj.Name = mascotaUpdateRequest.Name;
+            
+            if (mascotaUpdateRequest.Estado != true) obj.Estado = mascotaUpdateRequest.Estado;
+            
+            if (mascotaUpdateRequest.ClientId != 0) obj.ClienteId = mascotaUpdateRequest.ClientId;
+
+            _mascotaRepository.Update(obj);
+        }
+
+        public void Delete(int id)
+        {
+            var obj = _mascotaRepository.GetById(id);
+            if (obj == null) throw new NotFoundException(nameof(Mascota), id);
+
+            _mascotaRepository.Delete(obj);
         }
     }
 }

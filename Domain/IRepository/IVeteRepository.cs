@@ -5,7 +5,7 @@ namespace Domain.IRepository
     public interface IVeteRepository
     {
         Veterinario Add(Veterinario veterinario);
-        void Delete(Veterinario voterinario);
+        void Delete(Veterinario veterinario);
         void Update(Veterinario veterinario);
         List<Veterinario> GetAll();
         Veterinario? GetById(int id);
