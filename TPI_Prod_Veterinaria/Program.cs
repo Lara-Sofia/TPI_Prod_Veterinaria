@@ -70,13 +70,21 @@ builder.Services.AddAuthentication("Bearer") //"Bearer" es el tipo de auntentica
     }
 );
 
-#region INYECCIONES
+#region Inyecciones Repositorio
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
-builder.Services.AddScoped<IClienteService, ClienteService>();
 builder.Services.AddScoped<IVeteRepository, VeteRepository>();
-builder.Services.AddScoped<IVeteServices, VeteServices>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IDiagnosticoRepository, DiagnosticoRepository>();
 builder.Services.AddScoped<IMascotaRepository, MascotaRepository>();
+#endregion
+
+#region Inyecciones Servicio
+builder.Services.AddScoped<IClienteService, ClienteService>();
+builder.Services.AddScoped<IVeteServices, VeteServices>();
+builder.Services.AddScoped<IMascotaService, MascotaService>();
+#endregion
+
+#region Autenticacion
 builder.Services.Configure<AutenticacionServiceOptions>(
 builder.Configuration.GetSection(AutenticacionServiceOptions.AutenticacionService));
 builder.Services.AddScoped<ICustomAuthenticationService, AutenticacionService>();

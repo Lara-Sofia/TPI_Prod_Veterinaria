@@ -65,5 +65,7 @@ namespace Application.Services
 
             _veteRepository.Delete(obj);
         }
+
+
     }
 }

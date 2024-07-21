@@ -10,7 +10,6 @@ namespace Domain.IRepository
     public interface IMascotaRepository
     {
         Mascota Add(Mascota mascota);
-        void Delete(Mascota mascota);
         List<Mascota> GetAll();
         Mascota? GetById(int id);
         void Update (Mascota mascota);
