@@ -2,6 +2,7 @@
 using Application.Models.DTOs;
 using Application.Models.Requets;
 using Domain.Entities;
+using Domain.Enum;
 using Domain.Exceptions;
 using Domain.IRepository;
 using System;
@@ -21,11 +22,11 @@ namespace Application.Services
             _mascotaRepository = mascotaRepository;
         }
 
-        public Mascota Create(MascotaClienteRequest mascotaClienteRequest )
+        public Mascota Create(MascotaCreateRequest mascotaClienteRequest )
         {
             var obj = new Mascota();
             obj.Name = mascotaClienteRequest.Name;
-            obj.Estado = true; //true es q esta en consulta, false es que se puede ir
+            obj.Estado = EstadoMascota.EnConsulta; //1 es q esta en consulta, false es que se puede ir
             obj.ClienteId = mascotaClienteRequest.ClienteId;
             return _mascotaRepository.Add(obj);
            
@@ -54,19 +55,12 @@ namespace Application.Services
             
             if (mascotaUpdateRequest.Name != string.Empty) obj.Name = mascotaUpdateRequest.Name;
             
-            if (mascotaUpdateRequest.Estado != true) obj.Estado = mascotaUpdateRequest.Estado;
+            if (mascotaUpdateRequest.Estado != EstadoMascota.EnConsulta) obj.Estado = mascotaUpdateRequest.Estado;
             
             if (mascotaUpdateRequest.ClientId != 0) obj.ClienteId = mascotaUpdateRequest.ClientId;
 
             _mascotaRepository.Update(obj);
         }
 
-        public void Delete(int id)
-        {
-            var obj = _mascotaRepository.GetById(id);
-            if (obj == null) throw new NotFoundException(nameof(Mascota), id);
-
-            _mascotaRepository.Delete(obj);
-        }
     }
 }

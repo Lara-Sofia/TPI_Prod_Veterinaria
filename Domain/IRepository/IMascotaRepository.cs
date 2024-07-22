@@ -13,7 +13,6 @@ namespace Domain.IRepository
         List<Mascota> GetAll();
         Mascota? GetById(int id);
         void Update (Mascota mascota);
-        void Delete (Mascota mascota);
 
     }
 }

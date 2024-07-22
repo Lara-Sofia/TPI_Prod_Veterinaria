@@ -82,6 +82,7 @@ builder.Services.AddScoped<IMascotaRepository, MascotaRepository>();
 builder.Services.AddScoped<IClienteService, ClienteService>();
 builder.Services.AddScoped<IVeteServices, VeteServices>();
 builder.Services.AddScoped<IMascotaService, MascotaService>();
+builder.Services.AddScoped<IDiagnosticoService, DiagnosticoService>();
 #endregion
 
 #region Autenticacion

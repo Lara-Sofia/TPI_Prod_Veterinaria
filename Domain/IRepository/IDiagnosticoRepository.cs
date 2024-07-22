@@ -10,9 +10,10 @@ namespace Domain.IRepository
     public interface IDiagnosticoRepository
     {
         Diagnostico Add(Diagnostico diagnostico);
-        void Delete (Diagnostico diagnostico);
-        void Update (Diagnostico diagnostico);
         List<Diagnostico> GetAll();
+        Diagnostico GetById(int id);
+        List<Diagnostico> GetByMascotaId(int mascotaId);
+        List<Diagnostico> GetByVeteId(int veteId);
         void SaveChanges();
     }
 }

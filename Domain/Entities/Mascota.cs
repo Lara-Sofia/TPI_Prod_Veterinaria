@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Domain.Enum;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Domain.Entities
@@ -17,8 +19,11 @@ namespace Domain.Entities
         [Required]
         public string Name { get; set; }
 
-        public bool Estado { get; set; } 
+        public EstadoMascota Estado { get; set; }
 
+        // agregar el delete logico
+
+        [JsonIgnore]
         public ICollection<Diagnostico> Diagnosticos { get; set; }
 
         [ForeignKey("ClienteId")]

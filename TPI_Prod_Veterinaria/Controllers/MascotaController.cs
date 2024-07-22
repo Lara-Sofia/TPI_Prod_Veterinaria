@@ -19,7 +19,7 @@ namespace TPI_Prod_Veterinaria.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] MascotaClienteRequest mascotaClienteRequets)
+        public IActionResult Create([FromBody] MascotaCreateRequest mascotaClienteRequets)
         {
 
             var newObj = _mascotaService.Create(mascotaClienteRequets);
@@ -58,20 +58,6 @@ namespace TPI_Prod_Veterinaria.Controllers
             catch (NotFoundException ex)
             {
                 return NotFound(ex.Message);
-            }
-        }
-
-        [HttpDelete("{id}")]
-        public IActionResult Delete([FromRoute] int id)
-        {
-            try
-            {
-                _mascotaService.Delete(id);
-                return NoContent();
-            }
-            catch (NotFoundException ex)
-            {
-                return NotFound(ex.Message); 
             }
         }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,8 @@ namespace Application.Models.Requets
     public class MascotaUpdateRequest
     {
         public string Name { get; set; } = string.Empty;
-        public bool Estado { get; set; } = true;
+        public EstadoMascota Estado { get; set; } = EstadoMascota.EnConsulta;
         public int ClientId { get; set; } = 0;
+
     }
 }

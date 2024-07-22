@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Domain.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,7 @@ namespace Application.Models.DTOs
         public Cliente Cliente { get; set; }
         public string ClienteName { get; set; }
         public string Name { get; set; }
+        public EstadoMascota Estado {  get; set; }
 
         public static MascotaDto Create(Mascota mascota)
         {
@@ -25,6 +27,7 @@ namespace Application.Models.DTOs
             dto.ClienteId = mascota.ClienteId;
             dto.ClienteName = mascota.Cliente.Name;
             dto.Name = mascota.Name;
+            dto.Estado = mascota.Estado;
             return dto;
         }
 

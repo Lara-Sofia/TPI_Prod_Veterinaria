@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace Domain.Entities
 {
@@ -12,9 +13,9 @@ namespace Domain.Entities
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        
         public int Id { get; set; }
 
-        [Required]
         [StringLength(255)]
         public string Description { get; set; }
 
@@ -23,6 +24,7 @@ namespace Domain.Entities
 
         [ForeignKey ("DiagnosticoId")]
         public int DiagnosticoId { get; set; }
+        [JsonIgnore]
         public Diagnostico Diagnostico { get; set; }
     }
 }

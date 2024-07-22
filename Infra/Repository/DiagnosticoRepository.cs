@@ -1,6 +1,7 @@
 ﻿using Domain.Entities;
 using Domain.IRepository;
 using Infra.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,27 +20,34 @@ namespace Infra.Repository
 
         public Diagnostico Add(Diagnostico diagnostico)
         {
-            throw new NotImplementedException();
-        }
+            _context.Diagnosticos.Add(diagnostico);
+            _context.SaveChanges();
+            return diagnostico;
 
-        public void Delete(Diagnostico diagnostico)
-        {
-            throw new NotImplementedException();
         }
 
         public List<Diagnostico> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.Diagnosticos.Include(d  => d.Mascota).ThenInclude(d => d.Cliente).Include(d => d.DiagnosticoLineas).ToList();
         }
-
-        public void Update(Diagnostico diagnostico)
-        {
-            throw new NotImplementedException();
-        }
-        
         public void SaveChanges()
         {
-            throw new NotImplementedException();
+            _context.SaveChanges();
+        }
+
+        public Diagnostico GetById(int id)
+        {
+             return _context.Diagnosticos.Include(d => d.Mascota).ThenInclude(d => d.Cliente).Include(d => d.DiagnosticoLineas).FirstOrDefault(d => d.Id == id);
+        }
+
+        public List<Diagnostico> GetByMascotaId(int mascotaId)
+        {
+            return _context.Diagnosticos.Include(d => d.Mascota).ThenInclude(d => d.Cliente).Include(d => d.DiagnosticoLineas).Where(d => d.MascotaId == mascotaId).ToList();
+        }
+
+        public List<Diagnostico> GetByVeteId(int veteId)
+        {
+            return _context.Diagnosticos.Include(d => d.Mascota).ThenInclude(d => d.Cliente).Include(d => d.DiagnosticoLineas).Where(d => d.VeterinarioId == veteId).ToList();
         }
     }
 }

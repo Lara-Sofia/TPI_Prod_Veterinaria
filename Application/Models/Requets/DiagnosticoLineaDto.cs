@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Application.Models.Requets
 {
-    public class MascotaClienteRequest
+    public class DiagnosticoLineaDto
     {
-        public int ClienteId { get; set; }
-        public string Name { get; set; }
-        //public bool Estado { get; set; }
+        public string Description { get; set; }
+        public DateTime CreationDate { get; set; } = DateTime.Now;
     }
 }
