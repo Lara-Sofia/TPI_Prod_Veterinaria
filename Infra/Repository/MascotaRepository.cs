@@ -28,9 +28,12 @@ namespace Infra.Repository
 
         public List<Mascota> GetAll() 
         {
-            return _context.Mascotas.Include(a => a.Cliente)
-                //.Include(a => a.Diagnosticos)
-                .ToList();
+            return _context.Mascotas.Include(a => a.Cliente).Where(m => m.Activo).ToList();
+        }
+
+        public List<Mascota> GetAllInactivos()
+        {
+            return _context.Mascotas.Include(a => a.Cliente).Where(m => !m.Activo).ToList();
         }
 
         public Mascota? GetById(int id) 

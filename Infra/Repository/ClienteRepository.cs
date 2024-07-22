@@ -28,7 +28,12 @@ namespace Infra.Repository
 
         public List<Cliente> GetAll()
         {
-            return _context.Clientes.ToList();
+            return _context.Clientes.Where(c => c.Activo).ToList();
+        }
+
+        public List<Cliente> GetAllInactivos()
+        {
+            return _context.Clientes.Where(c => !c.Activo).ToList();
         }
 
         public Cliente? GetById(int id)

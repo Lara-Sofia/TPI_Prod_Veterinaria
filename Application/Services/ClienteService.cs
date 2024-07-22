@@ -24,6 +24,12 @@ namespace Application.Services
             return ClienteDto.CreateList(list);
         }
 
+        public List<ClienteDto> GetAllInactivos()
+        {
+            var list = _clienteRepository.GetAllInactivos();
+            return ClienteDto.CreateList(list);
+        }
+
         public ClienteDto GetById(int id)
         {
             var obj = _clienteRepository.GetById(id)

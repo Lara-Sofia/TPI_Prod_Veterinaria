@@ -8,6 +8,7 @@ namespace Domain.IRepository
         void Delete(Veterinario veterinario);
         void Update(Veterinario veterinario);
         List<Veterinario> GetAll();
+        List<Veterinario> GetAllInactivos();
         Veterinario? GetById(int id);
         void SaveChanges();
 

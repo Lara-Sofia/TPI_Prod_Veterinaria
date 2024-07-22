@@ -16,10 +16,15 @@ namespace Application.Services
     public class DiagnosticoService : IDiagnosticoService
     {
         private readonly IDiagnosticoRepository _diagnosticoRepository;
+        private readonly IMascotaRepository _mascotaRepository;
+        private readonly IVeteRepository _veteRepository;
 
-        public DiagnosticoService (IDiagnosticoRepository diagnosticoRepository)
+        public DiagnosticoService (IDiagnosticoRepository diagnosticoRepository, IMascotaRepository mascotaRepository, IVeteRepository veteRepository)
         {
             _diagnosticoRepository = diagnosticoRepository;
+            _mascotaRepository = mascotaRepository;
+            _veteRepository = veteRepository;
+
         }
 
         public int Create(DiagnosticoCreateRequest diagnosticoCreateRequest)
@@ -55,14 +60,42 @@ namespace Application.Services
 
         public List<DiagnosticoDto> GetByMascotaId(int mascotaId)
         {
-            var diagnosticos = _diagnosticoRepository.GetByMascotaId(mascotaId);
-            return diagnosticos.Select(d => DiagnosticoDto.Create(d)).ToList();
+            var obj = _mascotaRepository.GetById(mascotaId);
+            if (obj == null)
+            { 
+                throw new Exception(nameof(mascotaId));
+            }
+            else 
+            { 
+                var diagnosticos = _diagnosticoRepository.GetByMascotaId(mascotaId);
+                var dto = diagnosticos.Select(d => DiagnosticoDto.Create(d)).ToList();
+            
+                if (dto.Count == 0) 
+                { throw new NotFoundException(nameof(mascotaId));}
+            
+                return dto;
+            }
+            
         }
 
         public List<DiagnosticoDto> GetByVeteId(int veteId)
         {
-            var diagnosticos = _diagnosticoRepository.GetByVeteId(veteId);
-            return diagnosticos.Select(d => DiagnosticoDto.Create(d)).ToList();
+            var obj = _veteRepository.GetById(veteId);
+            if (obj == null)
+            {
+                throw new Exception(nameof(veteId));
+            }
+            else
+            {
+                var diagnosticos = _diagnosticoRepository.GetByVeteId(veteId);
+                var dto = diagnosticos.Select(d => DiagnosticoDto.Create(d)).ToList();
+
+                if (dto.Count == 0)
+                { throw new NotFoundException(nameof(veteId)); }
+
+                return dto;
+            }
+            
         }
 
     }

@@ -12,6 +12,5 @@ namespace Domain.Entities
         [Required]
         [MaxLength(5)]
         public int Matricula {  get; set; }
-        public ICollection<Diagnostico> Diagnosticos { get; set; } = new List<Diagnostico>();
     }
 }

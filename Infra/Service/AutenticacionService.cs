@@ -52,7 +52,7 @@ namespace Infra.Service
             
             if (user == null)
             {
-                throw new NotAllowedException("La autenticación ha fallado");
+                throw new NotAllowedException("La autenticación ha fallado, revisa el email y la contraseña.");
             }
 
             //PASO DOS - CREAMO JWT CREAR TOKEN

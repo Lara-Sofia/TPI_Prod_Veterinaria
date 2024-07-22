@@ -10,6 +10,7 @@ namespace Application.Interfaces
         Veterinario Create(VeterinarioCreateRequest veterinarioCreateRequets);
         void Delete(int id);
         List<VeterinarioDto> GetAll();
+        List<VeterinarioDto> GetAllInactivos();
         VeterinarioDto GetById(int id);
         void Update(int id, VeterinarioUpdateRequest veterinarioUpdateRequets);
     }

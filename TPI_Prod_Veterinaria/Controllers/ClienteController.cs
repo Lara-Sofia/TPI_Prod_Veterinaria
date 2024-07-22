@@ -38,15 +38,20 @@ namespace TPI_Prod_Veterinaria.Controllers
             }
             catch (NotFoundException ex)
             {
-                return NotFound(ex.Message);
+                return NotFound($"El cliente con ID {id} no se ha encontrado, intenta con otro");
             }
         }
 
         [HttpGet]
         public ActionResult<List<ClienteDto>> GetAll()
         {
-            //int userId = int.Parse(User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value ?? "");
             return _clienteService.GetAll();
+        }
+
+        [HttpGet("Inactivos")]
+        public ActionResult<List<ClienteDto>> GetAllInactivos()
+        {
+            return _clienteService.GetAllInactivos();
         }
 
         [HttpPut("{id}")]

@@ -26,20 +26,19 @@ namespace TPI_Prod_Veterinaria.Controllers
 
             var newObj = _mascotaService.Create(mascotaClienteRequest);
 
-            return Ok();
+            return Ok("Se creado con exito la mascota");
         }
 
         [HttpGet("{id}")]
         public ActionResult<MascotaDto> Get([FromRoute] int id)
         {
-            //ver
             try
             {
                 return _mascotaService.GetById(id);
             }
             catch (NotFoundException ex)
             {
-                return NotFound(ex.Message);
+                return NotFound($"La mascota con ID {id} no se ha encontrado, intenta con otro");
             }
         }
 
@@ -47,6 +46,12 @@ namespace TPI_Prod_Veterinaria.Controllers
         public ActionResult<List<MascotaDto>> GetAll()
         {
             return _mascotaService.GetAll();
+        }
+
+        [HttpGet("Inactivos")]
+        public ActionResult<List<MascotaDto>> GetAllInactivos()
+        {
+            return _mascotaService.GetAllInactivos();
         }
 
         [HttpPut("{id}")]

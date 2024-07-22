@@ -11,6 +11,7 @@ namespace Domain.IRepository
     {
         Mascota Add(Mascota mascota);
         List<Mascota> GetAll();
+        List<Mascota> GetAllInactivos();
         Mascota? GetById(int id);
         void Update (Mascota mascota);
 

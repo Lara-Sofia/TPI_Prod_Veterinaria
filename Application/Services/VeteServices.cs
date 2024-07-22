@@ -23,6 +23,12 @@ namespace Application.Services
             return VeterinarioDto.CreateList(list);
         }
 
+        public List<VeterinarioDto> GetAllInactivos()
+        {
+            var list = _veteRepository.GetAllInactivos();
+            return VeterinarioDto.CreateList(list);
+        }
+
         public VeterinarioDto GetById(int id)
         {
             var obj = _veteRepository.GetById(id)

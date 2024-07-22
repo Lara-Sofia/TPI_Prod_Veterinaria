@@ -26,16 +26,22 @@ namespace Application.Services
         {
             var obj = new Mascota();
             obj.Name = mascotaClienteRequest.Name;
-            obj.Estado = EstadoMascota.EnConsulta; //1 es q esta en consulta, false es que se puede ir
+            obj.Estado = EstadoMascota.EnConsulta; //1 es q esta en consulta, 2 es que se puede ir
             obj.Animal = mascotaClienteRequest.Animal;
             obj.ClienteId = mascotaClienteRequest.ClienteId;
             return _mascotaRepository.Add(obj);
-           
+
         }
 
         public List<MascotaDto> GetAll()
         {
             var list = _mascotaRepository.GetAll();
+            return MascotaDto.CreateList(list);
+        }
+
+        public List<MascotaDto> GetAllInactivos()
+        {
+            var list = _mascotaRepository.GetAllInactivos();
             return MascotaDto.CreateList(list);
         }
 

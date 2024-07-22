@@ -44,7 +44,7 @@ namespace TPI_Prod_Veterinaria.Controllers
             }
             catch (NotFoundException ex)
             {
-                return NotFound(ex.Message);
+                return NotFound($"El veterinario con ID {id} no se ha encontrado, intenta con otro");
             }
         }
 
@@ -52,6 +52,12 @@ namespace TPI_Prod_Veterinaria.Controllers
         public ActionResult<List<VeterinarioDto>> GetAll()
         {
             return _veteServices.GetAll();
+        }
+
+        [HttpGet("Inactivos")]
+        public ActionResult<List<VeterinarioDto>> GetAllInactivos()
+        {
+            return _veteServices.GetAllInactivos();
         }
 
         [HttpPut("{id}")]

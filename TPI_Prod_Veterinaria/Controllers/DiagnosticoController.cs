@@ -5,6 +5,7 @@ using Application.Services;
 using Domain.Entities;
 using Domain.Exceptions;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TPI_Prod_Veterinaria.Controllers
@@ -26,7 +27,7 @@ namespace TPI_Prod_Veterinaria.Controllers
         {
             var diagnostico = _diagnosticoService.Create(request);
 
-            return Ok(diagnostico);
+            return Ok($"El diagnostico se ha creado con exito y su Id es {diagnostico}");
         }
 
         [HttpGet]
@@ -44,22 +45,46 @@ namespace TPI_Prod_Veterinaria.Controllers
             }
             catch (NotFoundException ex)
             {
-                return NotFound(ex.Message);
+                return NotFound($"El diagnostico con ID {id} no se ha encontrado, intenta con otro");
             }
         }
 
         [HttpGet("mascota/{mascotaId}")]
         public ActionResult<List<DiagnosticoDto>> GetByMascotaId([FromRoute] int mascotaId)
         {
-            var diagnosticos = _diagnosticoService.GetByMascotaId(mascotaId);
-            return Ok(diagnosticos);
+            try
+            {
+                var diagnosticos = _diagnosticoService.GetByMascotaId(mascotaId);
+                return Ok(diagnosticos);
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound($"No se han encontrado diagnosticos para la mascota con id {mascotaId}");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"No se ha encontrado una mascota con id {mascotaId}");
+            }
+            
         }
 
         [HttpGet("veterinario/{veteId}")]
         public ActionResult<List<DiagnosticoDto>> GetByVeteId([FromRoute] int veteId)
         {
-            var diagnosticos = _diagnosticoService.GetByVeteId(veteId);
-            return Ok(diagnosticos);
+            try 
+            { 
+                var diagnosticos = _diagnosticoService.GetByVeteId(veteId);
+                return Ok(diagnosticos);
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound($"No se han encontrado diagnosticos por el veterinario con id {veteId}");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"No se ha encontrado un veterinario con id {veteId}");
+            }
+
         }
     }
 }

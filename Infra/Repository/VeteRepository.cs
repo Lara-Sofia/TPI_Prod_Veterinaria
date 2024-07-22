@@ -27,7 +27,12 @@ namespace Infra.Repository
 
         public List<Veterinario> GetAll()
         {
-            return _context.Veterinarios.ToList();
+            return _context.Veterinarios.Where(v => v.Activo).ToList();
+        }
+
+        public List<Veterinario> GetAllInactivos()
+        {
+            return _context.Veterinarios.Where(v => !v.Activo).ToList();
         }
 
         public Veterinario? GetById(int id)

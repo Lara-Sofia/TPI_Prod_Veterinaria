@@ -8,6 +8,7 @@ namespace Application.Interfaces
     {
         Mascota Create(MascotaCreateRequest mascotaClienteRequest);
         List<MascotaDto> GetAll();
+        List<MascotaDto> GetAllInactivos();
         MascotaDto? GetById(int id);
         void Update(int id, MascotaUpdateRequest mascotaUpdateRequest);
     }
