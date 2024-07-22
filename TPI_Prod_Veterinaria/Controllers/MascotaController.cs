@@ -3,12 +3,14 @@ using Application.Models.DTOs;
 using Application.Models.Requets;
 using Application.Services;
 using Domain.Exceptions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TPI_Prod_Veterinaria.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Policy = "VeterinarioPolicy")]
     public class MascotaController : ControllerBase
     {
        private readonly IMascotaService _mascotaService;
@@ -19,10 +21,10 @@ namespace TPI_Prod_Veterinaria.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] MascotaCreateRequest mascotaClienteRequets)
+        public IActionResult Create([FromBody] MascotaCreateRequest mascotaClienteRequest)
         {
 
-            var newObj = _mascotaService.Create(mascotaClienteRequets);
+            var newObj = _mascotaService.Create(mascotaClienteRequest);
 
             return Ok();
         }

@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|e:\\cosas de sofi\\prog3 2024\\tpi_prod_veterinaria\\tpi_prod_veterinaria\\controllers\\vetecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|solutionrelative:controllers\\vetecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|e:\\cosas de sofi\\prog3 2024\\tpi_prod_veterinaria\\tpi_prod_veterinaria\\controllers\\diagnosticocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|solutionrelative:controllers\\diagnosticocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|e:\\cosas de sofi\\prog3 2024\\tpi_prod_veterinaria\\tpi_prod_veterinaria\\controllers\\mascotacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|solutionrelative:controllers\\mascotacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94E1D897-7FE8-4F7F-AFBA-FA32BFE1015D}|..\\Application\\Application.csproj|e:\\cosas de sofi\\prog3 2024\\tpi_prod_veterinaria\\application\\interfaces\\imascotaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|e:\\cosas de sofi\\prog3 2024\\tpi_prod_veterinaria\\tpi_prod_veterinaria\\controllers\\vetecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8100BCD3-A0CD-40E0-BB2B-65D5860B7294}|TPI_Prod_Veterinaria.csproj|solutionrelative:controllers\\vetecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|e:\\cosas de sofi\\prog3 2024\\tpi_prod_veterinaria\\domain\\enum\\estadomascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94E1D897-7FE8-4F7F-AFBA-FA32BFE1015D}|..\\Application\\Application.csproj|e:\\cosas de sofi\\prog3 2024\\tpi_prod_veterinaria\\application\\models\\requets\\mascotaupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94E1D897-7FE8-4F7F-AFBA-FA32BFE1015D}|..\\Application\\Application.csproj|e:\\cosas de sofi\\prog3 2024\\tpi_prod_veterinaria\\application\\services\\mascotaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|e:\\cosas de sofi\\prog3 2024\\tpi_prod_veterinaria\\domain\\irepository\\imascotarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|e:\\cosas de sofi\\prog3 2024\\tpi_prod_veterinaria\\domain\\entities\\mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB341037-8CA8-4A1F-AB53-34B0E7C68895}|..\\Infra\\Infra.csproj|e:\\cosas de sofi\\prog3 2024\\tpi_prod_veterinaria\\infra\\repository\\mascotarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94E1D897-7FE8-4F7F-AFBA-FA32BFE1015D}|..\\Application\\Application.csproj|e:\\cosas de sofi\\prog3 2024\\tpi_prod_veterinaria\\application\\models\\dtos\\mascotadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94E1D897-7FE8-4F7F-AFBA-FA32BFE1015D}|..\\Application\\Application.csproj|e:\\cosas de sofi\\prog3 2024\\tpi_prod_veterinaria\\application\\models\\requets\\veterinarioupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63A4AE9E-E732-40C2-9B2E-5DA71363BED9}|..\\Domain\\Domain.csproj|e:\\cosas de sofi\\prog3 2024\\tpi_prod_veterinaria\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94E1D897-7FE8-4F7F-AFBA-FA32BFE1015D}|..\\Application\\Application.csproj|e:\\cosas de sofi\\prog3 2024\\tpi_prod_veterinaria\\application\\services\\veteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,73 +46,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 158,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VeteController.cs",
-              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\VeteController.cs",
-              "RelativeDocumentMoniker": "Controllers\\VeteController.cs",
-              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\VeteController.cs",
-              "RelativeToolTip": "Controllers\\VeteController.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAowFUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T04:39:11.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MascotaController.cs",
-              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\MascotaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MascotaController.cs",
-              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\MascotaController.cs",
-              "RelativeToolTip": "Controllers\\MascotaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T04:38:09.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IMascotaService.cs",
-              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\Interfaces\\IMascotaService.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\IMascotaService.cs",
-              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\Interfaces\\IMascotaService.cs",
-              "RelativeToolTip": "..\\Application\\Interfaces\\IMascotaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T04:37:38.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MascotaService.cs",
-              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\Services\\MascotaService.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Services\\MascotaService.cs",
-              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\Services\\MascotaService.cs",
-              "RelativeToolTip": "..\\Application\\Services\\MascotaService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T04:37:02.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IMascotaRepository.cs",
-              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Domain\\IRepository\\IMascotaRepository.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\IRepository\\IMascotaRepository.cs",
-              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Domain\\IRepository\\IMascotaRepository.cs",
-              "RelativeToolTip": "..\\Domain\\IRepository\\IMascotaRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T04:36:47.652Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -123,15 +74,145 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MascotaRepository.cs",
-              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Infra\\Repository\\MascotaRepository.cs",
-              "RelativeDocumentMoniker": "..\\Infra\\Repository\\MascotaRepository.cs",
-              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Infra\\Repository\\MascotaRepository.cs",
-              "RelativeToolTip": "..\\Infra\\Repository\\MascotaRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA3AAAA",
+              "DocumentIndex": 0,
+              "Title": "DiagnosticoController.cs",
+              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\DiagnosticoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DiagnosticoController.cs",
+              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\DiagnosticoController.cs",
+              "RelativeToolTip": "Controllers\\DiagnosticoController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwA0AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T04:35:50.257Z",
+              "WhenOpened": "2024-07-22T07:23:50.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MascotaDto.cs",
+              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\Models\\DTOs\\MascotaDto.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Models\\DTOs\\MascotaDto.cs",
+              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\Models\\DTOs\\MascotaDto.cs",
+              "RelativeToolTip": "..\\Application\\Models\\DTOs\\MascotaDto.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAkwBUAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T06:39:55.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VeteController.cs",
+              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\VeteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VeteController.cs",
+              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\VeteController.cs",
+              "RelativeToolTip": "Controllers\\VeteController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T06:34:49.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VeteServices.cs",
+              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\Services\\VeteServices.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Services\\VeteServices.cs",
+              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\Services\\VeteServices.cs",
+              "RelativeToolTip": "..\\Application\\Services\\VeteServices.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwDgAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T06:32:28.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MascotaService.cs",
+              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\Services\\MascotaService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Services\\MascotaService.cs",
+              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\Services\\MascotaService.cs",
+              "RelativeToolTip": "..\\Application\\Services\\MascotaService.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwDEAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T06:32:27.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MascotaUpdateRequest.cs",
+              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\Models\\Requets\\MascotaUpdateRequest.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Models\\Requets\\MascotaUpdateRequest.cs",
+              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\Models\\Requets\\MascotaUpdateRequest.cs",
+              "RelativeToolTip": "..\\Application\\Models\\Requets\\MascotaUpdateRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T06:32:03.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VeterinarioUpdateRequest.cs",
+              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\Models\\Requets\\VeterinarioUpdateRequest.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Models\\Requets\\VeterinarioUpdateRequest.cs",
+              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Application\\Models\\Requets\\VeterinarioUpdateRequest.cs",
+              "RelativeToolTip": "..\\Application\\Models\\Requets\\VeterinarioUpdateRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T06:31:58.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Mascota.cs",
+              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Domain\\Entities\\Mascota.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Mascota.cs",
+              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Domain\\Entities\\Mascota.cs",
+              "RelativeToolTip": "..\\Domain\\Entities\\Mascota.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T06:31:21.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MascotaController.cs",
+              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\MascotaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MascotaController.cs",
+              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\TPI_Prod_Veterinaria\\Controllers\\MascotaController.cs",
+              "RelativeToolTip": "Controllers\\MascotaController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T06:35:41.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EstadoMascota.cs",
+              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Domain\\Enum\\EstadoMascota.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Enum\\EstadoMascota.cs",
+              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Domain\\Enum\\EstadoMascota.cs",
+              "RelativeToolTip": "..\\Domain\\Enum\\EstadoMascota.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T06:42:00.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Entities\\User.cs",
+              "ToolTip": "E:\\Cosas de Sofi\\Prog3 2024\\TPI_Prod_Veterinaria\\Domain\\Entities\\User.cs",
+              "RelativeToolTip": "..\\Domain\\Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T06:31:15.307Z",
               "EditorCaption": ""
             }
           ]

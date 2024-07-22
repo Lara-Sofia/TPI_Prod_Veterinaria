@@ -27,6 +27,7 @@ namespace Application.Services
             var obj = new Mascota();
             obj.Name = mascotaClienteRequest.Name;
             obj.Estado = EstadoMascota.EnConsulta; //1 es q esta en consulta, false es que se puede ir
+            obj.Animal = mascotaClienteRequest.Animal;
             obj.ClienteId = mascotaClienteRequest.ClienteId;
             return _mascotaRepository.Add(obj);
            
@@ -58,6 +59,8 @@ namespace Application.Services
             if (mascotaUpdateRequest.Estado != EstadoMascota.EnConsulta) obj.Estado = mascotaUpdateRequest.Estado;
             
             if (mascotaUpdateRequest.ClientId != 0) obj.ClienteId = mascotaUpdateRequest.ClientId;
+
+            if (mascotaUpdateRequest.Activo != true) obj.Activo = mascotaUpdateRequest.Activo;
 
             _mascotaRepository.Update(obj);
         }

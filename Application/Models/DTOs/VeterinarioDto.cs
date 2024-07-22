@@ -22,8 +22,9 @@ namespace Application.Models.DTOs
             dto.Id = veterinario.Id;
             dto.Name = veterinario.Name;
             dto.Email = veterinario.Email;
-            dto.Matricula = veterinario.Matricula;
             dto.Activo = veterinario.Activo;
+            dto.Matricula = veterinario.Matricula;
+            
             return dto;
         }
 

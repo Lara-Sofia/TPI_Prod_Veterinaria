@@ -18,8 +18,9 @@ namespace Domain.Entities
 
         [Required]
         public string Name { get; set; }
-
+        public string Animal { get; set; }
         public EstadoMascota Estado { get; set; }
+        public bool Activo { get; set; } = true;
 
         // agregar el delete logico
 

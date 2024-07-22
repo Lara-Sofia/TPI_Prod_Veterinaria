@@ -31,7 +31,7 @@ namespace Application.Services
             return dto;
         }
 
-        public Veterinario Create(VeterinarioCreateRequets veterinarioCreateRequets)
+        public Veterinario Create(VeterinarioCreateRequest veterinarioCreateRequets)
         {
             var obj = new Veterinario();
             obj.Name = veterinarioCreateRequets.Name;
@@ -41,7 +41,7 @@ namespace Application.Services
             return _veteRepository.Add(obj);
         }
 
-        public void Update(int id, VeterinarioUpdateRequets veterinarioUpdateRequets)
+        public void Update(int id, VeterinarioUpdateRequest veterinarioUpdateRequets)
         {
             var obj = _veteRepository.GetById(id);
 
@@ -53,6 +53,8 @@ namespace Application.Services
             if (veterinarioUpdateRequets.Email != string.Empty) obj.Email = veterinarioUpdateRequets.Email;
 
             if (veterinarioUpdateRequets.Password != string.Empty) obj.Password = veterinarioUpdateRequets.Password;
+            
+            if (veterinarioUpdateRequets.Activo != true) obj.Activo = veterinarioUpdateRequets.Activo;
 
             _veteRepository.Update(obj);
         }

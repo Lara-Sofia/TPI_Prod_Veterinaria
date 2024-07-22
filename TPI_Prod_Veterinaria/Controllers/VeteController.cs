@@ -26,7 +26,7 @@ namespace TPI_Prod_Veterinaria.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody]  VeterinarioCreateRequets veterinarioCreateRequets)
+        public IActionResult Create([FromBody]  VeterinarioCreateRequest veterinarioCreateRequets)
         {
             
             var newObj = _veteServices.Create(veterinarioCreateRequets);
@@ -55,12 +55,12 @@ namespace TPI_Prod_Veterinaria.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update([FromRoute] int id, [FromBody] VeterinarioUpdateRequets veterinarioUpdateRequets)
+        public IActionResult Update([FromRoute] int id, [FromBody] VeterinarioUpdateRequest veterinarioUpdateRequest)
         {
 
             try
             {
-                _veteServices.Update(id, veterinarioUpdateRequets);
+                _veteServices.Update(id, veterinarioUpdateRequest);
                 return NoContent();
             }
             catch (NotFoundException ex)

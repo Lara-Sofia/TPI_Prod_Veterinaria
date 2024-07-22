@@ -12,8 +12,7 @@ namespace Application.Models.DTOs
         public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
-        // public string Password { get; set; }
-        //public bool Activo { get; set; }
+        public bool Activo { get; set; }
 
         public static ClienteDto Create(Cliente cliente)
         {
@@ -21,6 +20,7 @@ namespace Application.Models.DTOs
             dto.Id = cliente.Id;
             dto.Name = cliente.Name;
             dto.Email = cliente.Email;
+            dto.Activo = cliente.Activo;
             return dto;
         }
 

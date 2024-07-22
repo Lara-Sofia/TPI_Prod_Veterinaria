@@ -7,10 +7,10 @@ namespace Application.Interfaces
 {
     public interface IVeteServices
     {
-        Veterinario Create(VeterinarioCreateRequets veterinarioCreateRequets);
+        Veterinario Create(VeterinarioCreateRequest veterinarioCreateRequets);
         void Delete(int id);
         List<VeterinarioDto> GetAll();
         VeterinarioDto GetById(int id);
-        void Update(int id, VeterinarioUpdateRequets veterinarioUpdateRequets);
+        void Update(int id, VeterinarioUpdateRequest veterinarioUpdateRequets);
     }
 }

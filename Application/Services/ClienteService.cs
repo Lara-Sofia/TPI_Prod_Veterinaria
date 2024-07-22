@@ -54,6 +54,8 @@ namespace Application.Services
 
             if (clienteUpdateRequets.Password != string.Empty) obj.Password = clienteUpdateRequets.Password;
 
+            if (clienteUpdateRequets.Activo != true) obj.Activo = clienteUpdateRequets.Activo;
+
             _clienteRepository.Update(obj);
         }
 

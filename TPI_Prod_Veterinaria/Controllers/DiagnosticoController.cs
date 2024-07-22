@@ -4,12 +4,14 @@ using Application.Models.Requets;
 using Application.Services;
 using Domain.Entities;
 using Domain.Exceptions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TPI_Prod_Veterinaria.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Policy = "VeterinarioPolicy")]
     public class DiagnosticoController : ControllerBase
     {
         private readonly IDiagnosticoService _diagnosticoService;

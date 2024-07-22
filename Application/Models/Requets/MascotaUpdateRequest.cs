@@ -12,6 +12,7 @@ namespace Application.Models.Requets
         public string Name { get; set; } = string.Empty;
         public EstadoMascota Estado { get; set; } = EstadoMascota.EnConsulta;
         public int ClientId { get; set; } = 0;
+        public bool Activo { get; set; } = true;
 
     }
 }

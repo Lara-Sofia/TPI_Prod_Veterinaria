@@ -18,7 +18,9 @@ namespace Application.Models.DTOs
         public Cliente Cliente { get; set; }
         public string ClienteName { get; set; }
         public string Name { get; set; }
+        public string Animal { get; set; }
         public EstadoMascota Estado {  get; set; }
+        public bool Activo { get; set; }
 
         public static MascotaDto Create(Mascota mascota)
         {
@@ -27,7 +29,9 @@ namespace Application.Models.DTOs
             dto.ClienteId = mascota.ClienteId;
             dto.ClienteName = mascota.Cliente.Name;
             dto.Name = mascota.Name;
+            dto.Animal = mascota.Animal;
             dto.Estado = mascota.Estado;
+            dto.Activo = mascota.Activo;
             return dto;
         }
 
