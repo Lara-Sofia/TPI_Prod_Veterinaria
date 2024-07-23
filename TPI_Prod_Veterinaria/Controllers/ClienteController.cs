@@ -11,15 +11,19 @@ namespace TPI_Prod_Veterinaria.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Policy = "ClientePolicy")]
     public class ClienteController : ControllerBase
     {
         private readonly IClienteService _clienteService;
-        public ClienteController(IClienteService clienteService)
+        private readonly IMascotaService _mascotaService;
+        private readonly IDiagnosticoService _diagnosticoService;
+        public ClienteController(IClienteService clienteService, IMascotaService mascotaService, IDiagnosticoService diagnosticoService)
         {
             _clienteService = clienteService;
+            _mascotaService = mascotaService;
+            _diagnosticoService = diagnosticoService;
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public IActionResult Create([FromBody] ClienteCreateRequets clienteCreateRequets)
         {
@@ -28,6 +32,7 @@ namespace TPI_Prod_Veterinaria.Controllers
             return CreatedAtAction(nameof(Get), new { id = newObj.Id }, clienteCreateRequets);
         }
 
+        [Authorize(Policy = "VeterinarioPolicy")]
         [HttpGet("{id}")]
         public ActionResult<ClienteDto> Get([FromRoute] int id)
         {
@@ -42,18 +47,7 @@ namespace TPI_Prod_Veterinaria.Controllers
             }
         }
 
-        [HttpGet]
-        public ActionResult<List<ClienteDto>> GetAll()
-        {
-            return _clienteService.GetAll();
-        }
-
-        [HttpGet("Inactivos")]
-        public ActionResult<List<ClienteDto>> GetAllInactivos()
-        {
-            return _clienteService.GetAllInactivos();
-        }
-
+        [Authorize(Policy = "ClientePolicy")]
         [HttpPut("{id}")]
         public IActionResult Update([FromRoute] int id, [FromBody] ClienteUpdateRequets clienteUpdateRequets)
         {
@@ -70,17 +64,42 @@ namespace TPI_Prod_Veterinaria.Controllers
 
         }
 
-        [HttpDelete("{id}")]
-        public IActionResult Delete([FromRoute] int id)
+        [Authorize(Policy = "ClientePolicy")]
+        [HttpGet("mascotas/{clienteId}")]
+        public ActionResult<List<MascotaDto>> GetMascotasByClienteId([FromRoute] int clienteId)
         {
             try
             {
-                _clienteService.Delete(id);
-                return NoContent();
+                var mascotas = _mascotaService.GetByClienteId(clienteId);
+                return Ok(mascotas);
             }
             catch (NotFoundException ex)
             {
-                return NotFound(ex.Message);
+                return NotFound($"No se han encontrado mascotas para el cliente con id {clienteId}");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"No se ha encontrado una cliente con id {clienteId}");
+            }
+
+        }
+
+        [Authorize(Policy = "ClientePolicy")]
+        [HttpGet("diagnosticos/{mascotaId}")]
+        public ActionResult<List<DiagnosticoDto>> GetDiagnosticoByMascotaId([FromRoute] int mascotaId)
+        {
+            try
+            {
+                var diagnosticos = _diagnosticoService.GetByMascotaId(mascotaId);
+                return Ok(diagnosticos);
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound($"No se han encontrado diagnosticos para la mascota con id {mascotaId}");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"No se ha encontrado una mascota con id {mascotaId}");
             }
 
         }

@@ -16,10 +16,12 @@ namespace Application.Services
     public class MascotaService : IMascotaService
     {
         private readonly IMascotaRepository _mascotaRepository;
+        private readonly IClienteRepository _clienteRepository;
 
-        public MascotaService(IMascotaRepository mascotaRepository)
+        public MascotaService(IMascotaRepository mascotaRepository, IClienteRepository clienteRepository)
         {
             _mascotaRepository = mascotaRepository;
+            _clienteRepository = clienteRepository; 
         }
 
         public Mascota Create(MascotaCreateRequest mascotaClienteRequest )
@@ -51,6 +53,26 @@ namespace Application.Services
             ?? throw new NotFoundException(nameof(id));
             var dto = MascotaDto.Create(obj);
             return dto;
+        }
+
+        public List<MascotaDto> GetByClienteId(int clienteId)
+        {
+            var obj = _clienteRepository.GetById(clienteId);
+            if (obj == null)
+            {
+                throw new Exception(nameof(clienteId));
+            }
+            else
+            {
+                var mascotas = _mascotaRepository.GetByClienteId(clienteId);
+                var dto = mascotas.Select(m => MascotaDto.Create(m)).ToList();
+
+                if (dto.Count == 0)
+                { throw new NotFoundException(nameof(clienteId)); }
+
+                return dto;
+            }
+
         }
 
         public void Update(int id, MascotaUpdateRequest mascotaUpdateRequest)

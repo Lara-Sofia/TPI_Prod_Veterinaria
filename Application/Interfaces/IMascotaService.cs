@@ -10,6 +10,7 @@ namespace Application.Interfaces
         List<MascotaDto> GetAll();
         List<MascotaDto> GetAllInactivos();
         MascotaDto? GetById(int id);
+        List<MascotaDto> GetByClienteId(int clienteId);
         void Update(int id, MascotaUpdateRequest mascotaUpdateRequest);
     }
 }

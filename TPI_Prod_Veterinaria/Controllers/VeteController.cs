@@ -1,6 +1,7 @@
 ﻿using Application.Interfaces;
 using Application.Models.DTOs;
 using Application.Models.Requets;
+using Application.Services;
 using Domain.Exceptions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -18,23 +19,24 @@ namespace TPI_Prod_Veterinaria.Controllers
         //inyectamos servicio
 
         private readonly IVeteServices _veteServices;
+        private readonly IClienteService _clienteService;
 
-        public VeteController(IVeteServices veteServices)
+        public VeteController(IVeteServices veteServices, IClienteService clienteService)
         {
             _veteServices = veteServices;
-            
+            _clienteService = clienteService;
         }
 
-        [HttpPost]
-        public IActionResult Create([FromBody]  VeterinarioCreateRequest veterinarioCreateRequets)
+        [HttpPost("veterinario")]
+        public IActionResult Create([FromBody] VeterinarioCreateRequest veterinarioCreateRequets)
         {
-            
+
             var newObj = _veteServices.Create(veterinarioCreateRequets);
 
             return CreatedAtAction(nameof(Get), new { id = newObj.Id }, veterinarioCreateRequets);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("veterinario/{id}")]
         public ActionResult<VeterinarioDto> Get([FromRoute] int id)
         {
             //ver
@@ -48,13 +50,13 @@ namespace TPI_Prod_Veterinaria.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet("veterinarios")]
         public ActionResult<List<VeterinarioDto>> GetAll()
         {
             return _veteServices.GetAll();
         }
 
-        [HttpGet("Inactivos")]
+        [HttpGet("veterinariosInactivos")]
         public ActionResult<List<VeterinarioDto>> GetAllInactivos()
         {
             return _veteServices.GetAllInactivos();
@@ -76,7 +78,7 @@ namespace TPI_Prod_Veterinaria.Controllers
 
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("veterinarios/{id}")]
         public IActionResult Delete([FromRoute] int id)
         {
             try
@@ -91,6 +93,34 @@ namespace TPI_Prod_Veterinaria.Controllers
 
         }
 
+        //Desde aca, los Endpoints son pertenecientes a ClienteService
+
+        [HttpDelete("clientes/{id}")]
+        public IActionResult DeleteCliente([FromRoute] int id)
+        {
+            try
+            {
+                _clienteService.Delete(id);
+                return NoContent();
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+
+        }
+
+        [HttpGet("cliente")]
+        public ActionResult<List<ClienteDto>> GetAllClientes()
+        {
+            return _clienteService.GetAll();
+        }
+
+        [HttpGet("clientesInactivos")]
+        public ActionResult<List<ClienteDto>> GetAllClientesInactivos()
+        {
+            return _clienteService.GetAllInactivos();
+        }
 
     }
 }

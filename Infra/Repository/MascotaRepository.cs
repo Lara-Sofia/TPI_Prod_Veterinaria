@@ -41,6 +41,11 @@ namespace Infra.Repository
             return _context.Mascotas.Include(a => a.Cliente).FirstOrDefault(x => x.Id == id);
         }
 
+        public List<Mascota> GetByClienteId(int clienteid)
+        {
+            return _context.Mascotas.Include(a => a.Cliente).Where(a => a.ClienteId == clienteid).ToList();
+        }
+
         public void Update(Mascota mascota)
         {
             _context.Update(mascota);

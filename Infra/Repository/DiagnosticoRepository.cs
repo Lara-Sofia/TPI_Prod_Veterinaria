@@ -30,10 +30,7 @@ namespace Infra.Repository
         {
             return _context.Diagnosticos.Include(d  => d.Mascota).ThenInclude(d => d.Cliente).Include(d => d.DiagnosticoLineas).ToList();
         }
-        public void SaveChanges()
-        {
-            _context.SaveChanges();
-        }
+        
 
         public Diagnostico GetById(int id)
         {
@@ -48,6 +45,11 @@ namespace Infra.Repository
         public List<Diagnostico> GetByVeteId(int veteId)
         {
             return _context.Diagnosticos.Include(d => d.Mascota).ThenInclude(d => d.Cliente).Include(d => d.DiagnosticoLineas).Where(d => d.VeterinarioId == veteId).ToList();
+        }
+        
+        public void SaveChanges()
+        {
+            _context.SaveChanges();
         }
     }
 }
